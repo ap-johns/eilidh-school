@@ -4,7 +4,7 @@ A small revision website with notes, practice questions and answers, aligned to 
 
 **Live site:** https://ap-johns.github.io/eilidh-school/
 
-Top-level subjects: **Maths**, **Science**, **Computing**. All eight Maths modules are ready. Science and Computing come next.
+Top-level subjects: **Maths**, **Science**, **Computing**. Maths (8 modules) and Science (9 modules) are ready. Computing comes next.
 
 ---
 
@@ -37,15 +37,20 @@ The live site updates within a minute.
 ├── index.html                       ← Subject selector (Maths/Science/Computing)
 ├── styles.css                       ← Shared styles for all pages
 ├── maths/
-│   ├── index.html                   ← Maths landing (lists all 8 modules)
-│   ├── module-1.html                ← Module 1 revision notes
-│   ├── module-1-practice.html       ← Module 1 practice questions
-│   └── module-1-answers.html        ← Module 1 answers with worked solutions
+│   ├── index.html                   ← Maths landing (8 modules)
+│   ├── module-N.html                ← notes
+│   ├── module-N-practice.html       ← practice questions
+│   └── module-N-answers.html        ← answers with workings
+├── science/
+│   ├── index.html                   ← Science landing (9 modules)
+│   ├── module-N.html
+│   ├── module-N-practice.html
+│   └── module-N-answers.html
 ├── docs/                            ← Source curriculum PDFs (not served)
 └── README.md
 ```
 
-Future subjects will live in sibling folders: `science/`, `computing/`. Modules within each subject follow the same `module-N.html` / `-practice` / `-answers` naming.
+Future subjects will live in sibling folders (e.g. `computing/`). Modules within each subject follow the same `module-N.html` / `-practice` / `-answers` naming.
 
 ---
 
@@ -61,3 +66,19 @@ Future subjects will live in sibling folders: `science/`, `computing/`. Modules 
 | 6 | Equations & 2D shapes | ✓ Ready |
 | 7 | 3D shapes & Pythagoras | ✓ Ready |
 | 8 | Ratio, proportion & statistics | ✓ Ready |
+
+---
+
+## Science curriculum coverage
+
+| Module | Topic | Status |
+|--------|-------|--------|
+| 1 | Health & lifestyle | ✓ Ready |
+| 2 | Periodic table & separation techniques | ✓ Ready |
+| 3 | Electricity & magnetism | ✓ Ready |
+| 4 | Biological processes & ecosystems | ✓ Ready |
+| 5 | Metals & other materials | ✓ Ready |
+| 6 | Energy | ✓ Ready |
+| 7 | Adaptation & inheritance | ✓ Ready |
+| 8 | The Earth | ✓ Ready |
+| 9 | Motion & pressure | ✓ Ready |
