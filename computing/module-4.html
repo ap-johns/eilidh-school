@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 — Visual programming with Scratch</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 4</p>
+    <h1>Visual programming with Scratch</h1>
+    <p class="lede">Quick-reference revision notes for parents.</p>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-4.html" class="page-tab active">Notes</a>
+    <a href="module-4-practice.html" class="page-tab">Practice</a>
+    <a href="module-4-answers.html" class="page-tab">Answers</a>
+  </nav>
+
+  <h2>4.1 Getting started with Scratch</h2>
+  <p>Scratch is a <strong>block-based</strong> programming language. Drag colour-coded blocks together to build scripts.</p>
+  <ul>
+    <li><strong>Stage</strong>: where the action happens.</li>
+    <li><strong>Sprite</strong>: a character or object on the stage.</li>
+    <li><strong>Backdrop</strong>: the stage's background.</li>
+    <li><strong>Scripts</strong>: the code that runs for a sprite.</li>
+  </ul>
+
+  <h3>Block categories (colours)</h3>
+  <table>
+    <thead><tr><th>Category</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td>Motion (blue)</td><td>move, turn, go to</td></tr>
+      <tr><td>Looks (purple)</td><td>say, costume, change effect</td></tr>
+      <tr><td>Sound</td><td>play sound, change volume</td></tr>
+      <tr><td>Events (yellow)</td><td>when green flag clicked, when key pressed</td></tr>
+      <tr><td>Control (orange)</td><td>repeat, if-then-else, wait</td></tr>
+      <tr><td>Sensing (light blue)</td><td>touching, key pressed, ask</td></tr>
+      <tr><td>Operators (green)</td><td>+, =, and, random</td></tr>
+      <tr><td>Variables (orange)</td><td>set / change / show variable</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4.2 Sprites, costumes &amp; naming</h2>
+  <ul>
+    <li>Each sprite can have several <strong>costumes</strong> (different appearances). Switching costumes makes it look animated.</li>
+    <li><strong>Name your sprites</strong> sensibly (e.g. "ball", "player1") — it makes scripts much easier to read.</li>
+  </ul>
+
+  <h2>4.3 Duplicating sprites &amp; backdrops</h2>
+  <ul>
+    <li>Right-click → Duplicate makes an exact copy with all its scripts. Useful for enemies, projectiles, etc.</li>
+    <li>Add a backdrop from the library or paint your own.</li>
+  </ul>
+
+  <h2>4.4 Interacting with keypresses and other sprites</h2>
+  <p>Common event blocks:</p>
+  <ul>
+    <li><strong>When green flag clicked</strong> — run when the project starts.</li>
+    <li><strong>When [space] key pressed</strong> — run when a key is pressed.</li>
+    <li><strong>When this sprite clicked</strong>.</li>
+    <li><strong>When I receive [message]</strong> — broadcast/receive lets sprites talk to each other.</li>
+  </ul>
+
+  <p>Detecting collisions: <span class="mono">if &lt;touching [other sprite]?&gt; then …</span>.</p>
+
+  <h2>4.5 Variables</h2>
+  <p>A <strong>variable</strong> stores a value (number or text) you can use later. In a game it's how you keep <em>score</em>, <em>lives</em>, <em>level</em>.</p>
+
+  <ul>
+    <li><strong>Set</strong> variable to a value (e.g. set score to 0).</li>
+    <li><strong>Change</strong> variable by an amount (e.g. change score by 1).</li>
+    <li>Show / hide on the stage.</li>
+  </ul>
+
+  <p>Use <strong>if … then … else</strong> to react to variable values:</p>
+  <p class="mono-block">if &lt;lives = 0&gt; then<br>&nbsp;&nbsp;&nbsp;&nbsp;say "Game over"<br>&nbsp;&nbsp;&nbsp;&nbsp;stop all</p>
+
+  <h2>4.6 Timers</h2>
+  <ul>
+    <li>The built-in <strong>timer</strong> starts at 0 and counts up in seconds. Reset with the "reset timer" block.</li>
+    <li>Combine with the <strong>wait</strong> block to space things out, or with <strong>repeat until</strong> to make a count-down loop.</li>
+    <li>Use a variable like <span class="mono">time_left</span> if you want a count-down displayed.</li>
+  </ul>
+
+  <div class="quick-ref">
+    <h3>Quick reference</h3>
+    <ul>
+      <li>Sprite = character; backdrop = scene; script = code</li>
+      <li>Yellow Events start scripts; orange Control loops/decides</li>
+      <li><code>broadcast</code> + <code>when I receive</code> let sprites communicate</li>
+      <li>Variables: set, change, show — used for score, lives, etc.</li>
+      <li>Timer counts in seconds; combine with wait/repeat-until</li>
+    </ul>
+  </div>
+
+  <div class="prev-next">
+    <a href="index.html">
+      <span class="label">← Back</span>
+      All modules
+    </a>
+    <a href="module-4-practice.html">
+      <span class="label">Next →</span>
+      Practice questions
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>

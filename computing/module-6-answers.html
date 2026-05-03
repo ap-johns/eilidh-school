@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 6 Answers</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 6 · Answers</p>
+    <h1>Answers &amp; explanations</h1>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-6.html" class="page-tab">Notes</a>
+    <a href="module-6-practice.html" class="page-tab">Practice</a>
+    <a href="module-6-answers.html" class="page-tab active">Answers</a>
+  </nav>
+
+  <h2 class="section-divider">Section A — Easy</h2>
+
+  <div class="answer">
+    <div class="answer-num">01</div>
+    <div class="answer-body">
+      <span class="final"><code>setup()</code> runs once when the board starts. <code>loop()</code> runs over and over.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">02</div>
+    <div class="answer-body">
+      <span class="final">(a) Set whether a pin is INPUT or OUTPUT.<br>(b) Set a digital pin HIGH or LOW.<br>(c) Read whether a digital pin is HIGH or LOW.<br>(d) Pause the program for a given number of milliseconds.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">03</div>
+    <div class="answer-body">
+      <span class="final">0 to 1023 (a 10-bit value).</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">04</div>
+    <div class="answer-body">
+      <span class="final">Pulse Width Modulation. It switches a digital pin on and off very quickly to fake an analogue voltage — used to dim LEDs and control motor speed.</span>
+    </div>
+  </div>
+
+  <h2 class="section-divider">Section B — Medium</h2>
+
+  <div class="answer">
+    <div class="answer-num">05</div>
+    <div class="answer-body">
+      <pre class="code">void setup() {
+  pinMode(9, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(9, HIGH);
+  delay(500);
+  digitalWrite(9, LOW);
+  delay(500);
+}</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">06</div>
+    <div class="answer-body">
+      <span class="final">Buttons "bounce" — a single press can register as several rapid HIGHs as the contacts settle. The delay (debounce) prevents the latch flipping multiple times per press.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">07</div>
+    <div class="answer-body">
+      <pre class="code">void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int v = analogRead(A0);
+  Serial.println(v);
+  delay(1000);
+}</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">08</div>
+    <div class="answer-body">
+      <span class="final">A digital pin can only supply a small current — too small to drive a motor, and the inrush could damage the Arduino. Use a transistor (e.g. NPN) as a switch, with the motor powered from a separate supply. The Arduino just controls the transistor.</span>
+    </div>
+  </div>
+
+  <h2 class="section-divider">Section C — Hard</h2>
+
+  <div class="answer">
+    <div class="answer-num">09</div>
+    <div class="answer-body">
+      <pre class="code">void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  int light = analogRead(A0);
+  if (light &lt; 300) {
+    digitalWrite(13, HIGH);
+  } else {
+    digitalWrite(13, LOW);
+  }
+}</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">10</div>
+    <div class="answer-body">
+      <pre class="code">void flash(int pin, int times, int ms) {
+  for (int i = 0; i &lt; times; i++) {
+    digitalWrite(pin, HIGH);
+    delay(ms);
+    digitalWrite(pin, LOW);
+    delay(ms);
+  }
+}
+
+void loop() {
+  flash(9, 4, 200);
+  delay(2000);
+}</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">11</div>
+    <div class="answer-body">
+      <span class="final">Wiring: potentiometer's outer pins to 5V and GND, middle pin to A0. LED's positive leg through a resistor to a PWM pin (e.g. pin 9), other leg to GND.</span>
+      <pre class="code">void loop() {
+  int reading = analogRead(A0);   // 0–1023
+  int brightness = reading / 4;    // map to 0–255
+  analogWrite(9, brightness);
+}</pre>
+    </div>
+  </div>
+
+  <div class="prev-next">
+    <a href="module-6-practice.html">
+      <span class="label">← Back</span>
+      Practice
+    </a>
+    <a href="index.html">
+      <span class="label">Next →</span>
+      All modules
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>

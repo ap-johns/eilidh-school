@@ -4,7 +4,7 @@ A small revision website with notes, practice questions and answers, aligned to 
 
 **Live site:** https://ap-johns.github.io/eilidh-school/
 
-Top-level subjects: **Maths**, **Science**, **Computing**. Maths (8 modules) and Science (9 modules) are ready. Computing comes next.
+Top-level subjects: **Maths**, **Science**, **Computing**. All three are now ready: Maths (8 modules), Science (9 modules), Computing (6 modules).
 
 ---
 
@@ -46,11 +46,16 @@ The live site updates within a minute.
 │   ├── module-N.html
 │   ├── module-N-practice.html
 │   └── module-N-answers.html
+├── computing/
+│   ├── index.html                   ← Computing landing (6 modules)
+│   ├── module-N.html
+│   ├── module-N-practice.html
+│   └── module-N-answers.html
 ├── docs/                            ← Source curriculum PDFs (not served)
 └── README.md
 ```
 
-Future subjects will live in sibling folders (e.g. `computing/`). Modules within each subject follow the same `module-N.html` / `-practice` / `-answers` naming.
+Modules within each subject follow the same `module-N.html` / `-practice` / `-answers` naming.
 
 ---
 
@@ -82,3 +87,16 @@ Future subjects will live in sibling folders (e.g. `computing/`). Modules within
 | 7 | Adaptation & inheritance | ✓ Ready |
 | 8 | The Earth | ✓ Ready |
 | 9 | Motion & pressure | ✓ Ready |
+
+---
+
+## Computing curriculum coverage
+
+| Module | Topic | Status |
+|--------|-------|--------|
+| 1 | Computational thinking (Python & Turtle) | ✓ Ready |
+| 2 | Word processing | ✓ Ready |
+| 3 | Website design & development | ✓ Ready |
+| 4 | Visual programming with Scratch | ✓ Ready |
+| 5 | E-safety & using the web | ✓ Ready |
+| 6 | Getting started with Arduino | ✓ Ready |

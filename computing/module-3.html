@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 3 — Website design &amp; development</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 3</p>
+    <h1>Website design &amp; development</h1>
+    <p class="lede">Quick-reference revision notes for parents.</p>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-3.html" class="page-tab active">Notes</a>
+    <a href="module-3-practice.html" class="page-tab">Practice</a>
+    <a href="module-3-answers.html" class="page-tab">Answers</a>
+  </nav>
+
+  <h2>3.1 Introduction to web development &amp; HTML</h2>
+  <p><strong>HTML</strong> (HyperText Markup Language) describes the <em>structure</em> of a web page using <strong>tags</strong>.</p>
+
+  <pre class="code">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+    &lt;p&gt;Welcome to my site.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+  <ul>
+    <li><code>&lt;head&gt;</code> = info about the page (title, links to CSS).</li>
+    <li><code>&lt;body&gt;</code> = visible content.</li>
+    <li>Most tags come in pairs: <code>&lt;p&gt;…&lt;/p&gt;</code>.</li>
+  </ul>
+
+  <h2>3.2 HTML and W3C standards</h2>
+  <p>The <strong>W3C</strong> (World Wide Web Consortium) sets the standards browsers follow. Following them means your page works the same in Chrome, Safari, Firefox, etc.</p>
+
+  <h3>Common tags</h3>
+  <table>
+    <thead><tr><th>Tag</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>&lt;h1&gt;</code> – <code>&lt;h6&gt;</code></td><td>Headings (h1 most important)</td></tr>
+      <tr><td><code>&lt;p&gt;</code></td><td>Paragraph</td></tr>
+      <tr><td><code>&lt;a&gt;</code></td><td>Link</td></tr>
+      <tr><td><code>&lt;img&gt;</code></td><td>Image (self-closing)</td></tr>
+      <tr><td><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> / <code>&lt;li&gt;</code></td><td>Unordered / ordered list, list item</td></tr>
+      <tr><td><code>&lt;div&gt;</code> / <code>&lt;span&gt;</code></td><td>Generic block / inline containers</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3.3 Styling basics with CSS</h2>
+  <p><strong>CSS</strong> (Cascading Style Sheets) controls how the page <em>looks</em>.</p>
+
+  <pre class="code">h1 {
+  color: navy;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}</pre>
+
+  <ul>
+    <li><strong>Selector</strong> (<code>h1</code>) — what to style.</li>
+    <li><strong>Property</strong>: <strong>value</strong> (<code>color: navy;</code>) — how to style it.</li>
+  </ul>
+
+  <h3>The box model</h3>
+  <p>Every element is a rectangular box made of:</p>
+  <ul>
+    <li><strong>Content</strong> — the text or image itself</li>
+    <li><strong>Padding</strong> — space inside the border</li>
+    <li><strong>Border</strong> — line around the element</li>
+    <li><strong>Margin</strong> — space outside the border, between this element and others</li>
+  </ul>
+
+  <h2>3.4 Navigation through hyperlinks</h2>
+  <pre class="code">&lt;a href="about.html"&gt;About us&lt;/a&gt;
+&lt;a href="https://example.com" target="_blank"&gt;Open in new tab&lt;/a&gt;</pre>
+  <ul>
+    <li><code>href</code> = where the link goes.</li>
+    <li><code>target="_blank"</code> = open in a new tab.</li>
+  </ul>
+
+  <h2>3.5 Images and media</h2>
+  <pre class="code">&lt;img src="cat.jpg" alt="A cat sitting on a sofa" width="400"&gt;
+&lt;video src="clip.mp4" controls&gt;&lt;/video&gt;</pre>
+
+  <ul>
+    <li><strong><code>alt</code></strong> text describes the image — used by screen readers and shown if the image fails.</li>
+    <li><strong>JPG</strong>: photos. <strong>PNG</strong>: graphics with transparency. <strong>SVG</strong>: vector — scales without losing quality. <strong>GIF</strong>: simple animations.</li>
+  </ul>
+
+  <h2>3.6 Styling for readability and engagement</h2>
+  <ul>
+    <li><strong>Typography</strong>: pick easy-to-read fonts; use big enough text (16px+ for body).</li>
+    <li><strong>Contrast</strong>: dark text on light background (or vice versa) — never mid-grey on mid-grey.</li>
+    <li><strong>Hierarchy</strong>: headings clearly bigger/bolder than body.</li>
+    <li><strong>Whitespace</strong>: line-height ≥ 1.4, generous margins.</li>
+    <li><strong>Images</strong> support the text — don't drown it.</li>
+    <li><strong>Trustworthy</strong>: clear authorship, accurate, consistent design.</li>
+  </ul>
+
+  <div class="quick-ref">
+    <h3>Quick reference</h3>
+    <ul>
+      <li>HTML = structure; CSS = appearance</li>
+      <li>Page skeleton: html → head + body</li>
+      <li>Box model: content → padding → border → margin</li>
+      <li>Link: <code>&lt;a href="..."&gt;text&lt;/a&gt;</code></li>
+      <li>Image: <code>&lt;img src="..." alt="..."&gt;</code> — always include alt text</li>
+      <li>Good design: clear hierarchy, contrast, whitespace, consistency</li>
+    </ul>
+  </div>
+
+  <div class="prev-next">
+    <a href="index.html">
+      <span class="label">← Back</span>
+      All modules
+    </a>
+    <a href="module-3-practice.html">
+      <span class="label">Next →</span>
+      Practice questions
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>

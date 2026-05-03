@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 1 — Computational thinking</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 1</p>
+    <h1>Computational thinking (Python &amp; Turtle)</h1>
+    <p class="lede">Quick-reference revision notes for parents.</p>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-1.html" class="page-tab active">Notes</a>
+    <a href="module-1-practice.html" class="page-tab">Practice</a>
+    <a href="module-1-answers.html" class="page-tab">Answers</a>
+  </nav>
+
+  <h2>1.1 Decomposition</h2>
+  <p><strong>Decomposition</strong> = breaking a big problem into smaller, more manageable parts.</p>
+  <ul>
+    <li>Each smaller part can be solved on its own.</li>
+    <li>Easier to share work, spot bugs and reuse pieces later.</li>
+  </ul>
+
+  <div class="box box-example">
+    <div class="box-label">Example — making a sandwich</div>
+    <p>Decomposed: 1) get bread, 2) butter it, 3) add filling, 4) close, 5) cut. Each step is small enough to do without thinking.</p>
+  </div>
+
+  <h2>1.2 Abstraction</h2>
+  <p><strong>Abstraction</strong> = hiding the details that don't matter and keeping only what does.</p>
+  <ul>
+    <li>A map is an abstraction of the real world — only roads, places and key features.</li>
+    <li>In code: a function name like <code>draw_square()</code> abstracts away the 4 forward + 4 turn instructions inside.</li>
+  </ul>
+
+  <h2>1.3 Pattern recognition</h2>
+  <p>Spot the parts of a problem that <strong>repeat</strong> or <strong>look similar</strong>. If you can find a pattern, a loop or a function will save lots of typing.</p>
+
+  <div class="box box-example">
+    <div class="box-label">Example — Python Turtle drawing a square</div>
+    <p>Without a loop:</p>
+    <pre class="code">import turtle
+t = turtle.Turtle()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)</pre>
+    <p>With a loop (pattern recognised):</p>
+    <pre class="code">for i in range(4):
+    t.forward(100)
+    t.right(90)</pre>
+  </div>
+
+  <h2>1.4 Pattern recognition with subroutines</h2>
+  <p>A <strong>subroutine</strong> (also called a function) is a named block of code you can call whenever you need it.</p>
+
+  <pre class="code">def draw_square(size):
+    for i in range(4):
+        t.forward(size)
+        t.right(90)
+
+draw_square(50)
+draw_square(100)
+draw_square(150)</pre>
+
+  <ul>
+    <li><code>def</code> defines the subroutine.</li>
+    <li><code>size</code> is a <strong>parameter</strong> — a value the subroutine receives when it's called.</li>
+    <li>You can call the same subroutine many times with different values.</li>
+  </ul>
+
+  <h2>1.5 Algorithms</h2>
+  <p>An <strong>algorithm</strong> is a step-by-step set of instructions to solve a problem. They can be written as:</p>
+  <ul>
+    <li><strong>Pseudocode</strong> — plain English with code-like structure.</li>
+    <li><strong>Flow chart</strong> — boxes and arrows.</li>
+    <li><strong>Code</strong> — actual programming language.</li>
+  </ul>
+
+  <h3>Flow chart shapes</h3>
+  <table>
+    <thead><tr><th>Shape</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>Rounded rectangle (terminator)</td><td>Start / End</td></tr>
+      <tr><td>Parallelogram</td><td>Input or Output</td></tr>
+      <tr><td>Rectangle</td><td>Process / instruction</td></tr>
+      <tr><td>Diamond</td><td>Decision (Yes/No)</td></tr>
+      <tr><td>Arrow</td><td>Direction of flow</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box box-example">
+    <div class="box-label">Example — pseudocode</div>
+    <pre class="code">INPUT age
+IF age &gt;= 18 THEN
+    OUTPUT "You can vote"
+ELSE
+    OUTPUT "Too young"
+END IF</pre>
+  </div>
+
+  <h2>1.6 Challenges</h2>
+  <p>Putting it all together: shape challenges (squares, triangles, polygons) and maze challenges (navigate the turtle through a path). Use:</p>
+  <ul>
+    <li>Decomposition to break the maze into segments.</li>
+    <li>Pattern recognition to spot repeated moves.</li>
+    <li>Subroutines to keep code tidy.</li>
+  </ul>
+
+  <div class="quick-ref">
+    <h3>Quick reference</h3>
+    <ul>
+      <li>Decomposition — break problem into smaller parts</li>
+      <li>Abstraction — hide unimportant detail</li>
+      <li>Pattern recognition — find what repeats; use loops/functions</li>
+      <li>Subroutine: <code>def name(param):</code></li>
+      <li>Loops: <code>for i in range(n):</code></li>
+      <li>Flow chart: rounded ends, parallelogram I/O, rectangle process, diamond decision</li>
+    </ul>
+  </div>
+
+  <div class="prev-next">
+    <a href="index.html">
+      <span class="label">← Back</span>
+      All modules
+    </a>
+    <a href="module-1-practice.html">
+      <span class="label">Next →</span>
+      Practice questions
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>

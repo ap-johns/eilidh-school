@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 1 Answers</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 1 · Answers</p>
+    <h1>Answers &amp; explanations</h1>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-1.html" class="page-tab">Notes</a>
+    <a href="module-1-practice.html" class="page-tab">Practice</a>
+    <a href="module-1-answers.html" class="page-tab active">Answers</a>
+  </nav>
+
+  <h2 class="section-divider">Section A — Easy</h2>
+
+  <div class="answer">
+    <div class="answer-num">01</div>
+    <div class="answer-body">
+      <span class="final">(a) Breaking a problem into smaller, easier parts. (b) Hiding unimportant detail; focusing only on what matters. (c) Spotting parts of a problem that repeat or are similar.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">02</div>
+    <div class="answer-body">
+      <span class="final">Rectangle = process. Diamond = decision. Parallelogram = input/output. Rounded rectangle = start/end.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">03</div>
+    <div class="answer-body">
+      <span class="final"><code>def</code></span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">04</div>
+    <div class="answer-body">
+      <span class="final">Draws an equilateral triangle (3 sides of 50, turning 120° each time).</span>
+    </div>
+  </div>
+
+  <h2 class="section-divider">Section B — Medium</h2>
+
+  <div class="answer">
+    <div class="answer-num">05</div>
+    <div class="answer-body">
+      <span class="final">Example: 1) Fill the kettle with water. 2) Boil the kettle. 3) Put a tea bag in a mug. 4) Pour boiling water into the mug. 5) Wait, then remove the bag. 6) Add milk/sugar.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">06</div>
+    <div class="answer-body">
+      <pre class="code">for i in range(5):
+    t.forward(100)
+    t.right(72)</pre>
+      <div class="working">5 sides × 72° = 360°, so this draws a regular pentagon.</div>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">07</div>
+    <div class="answer-body">
+      <pre class="code">def draw_triangle(size):
+    for i in range(3):
+        t.forward(size)
+        t.left(120)</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">08</div>
+    <div class="answer-body">
+      <pre class="code">INPUT number
+IF number &gt; 0 THEN
+    OUTPUT "Positive"
+ELSE IF number &lt; 0 THEN
+    OUTPUT "Negative"
+ELSE
+    OUTPUT "Zero"
+END IF</pre>
+    </div>
+  </div>
+
+  <h2 class="section-divider">Section C — Hard</h2>
+
+  <div class="answer">
+    <div class="answer-num">09</div>
+    <div class="answer-body">
+      <pre class="code">for i in range(4):
+    draw_square(40)
+    t.penup()
+    t.forward(40 + 50)   # square width + gap
+    t.pendown()</pre>
+      <div class="working">After each square, lift the pen, move along, drop the pen and draw the next.</div>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">10</div>
+    <div class="answer-body">
+      <pre class="code">def draw_polygon(sides, size):
+    angle = 360 / sides
+    for i in range(sides):
+        t.forward(size)
+        t.right(angle)
+
+draw_polygon(6, 60)   # hexagon</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">11</div>
+    <div class="answer-body">
+      <span class="final">Flow chart should show: Start → Input password → Decision diamond "correct?" → Yes → Output "Welcome" → End. → No → loop back to Input password.</span>
+    </div>
+  </div>
+
+  <div class="prev-next">
+    <a href="module-1-practice.html">
+      <span class="label">← Back</span>
+      Practice
+    </a>
+    <a href="index.html">
+      <span class="label">Next →</span>
+      All modules
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>

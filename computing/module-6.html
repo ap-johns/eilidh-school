@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 6 — Getting started with Arduino</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 6</p>
+    <h1>Getting started with Arduino</h1>
+    <p class="lede">Quick-reference revision notes for parents.</p>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-6.html" class="page-tab active">Notes</a>
+    <a href="module-6-practice.html" class="page-tab">Practice</a>
+    <a href="module-6-answers.html" class="page-tab">Answers</a>
+  </nav>
+
+  <h2>6.1 Getting started — first circuit (LED)</h2>
+  <ul>
+    <li>An <strong>Arduino</strong> is a small programmable microcontroller board with input/output (I/O) pins.</li>
+    <li>It runs simple C/C++ programs called <strong>sketches</strong>.</li>
+  </ul>
+
+  <p>Every sketch has two main functions:</p>
+  <pre class="code">void setup() {
+  // runs once when the board starts
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  // runs over and over forever
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}</pre>
+
+  <ul>
+    <li><code>pinMode(pin, OUTPUT)</code> — set the pin's direction.</li>
+    <li><code>digitalWrite(pin, HIGH/LOW)</code> — turn the pin ON or OFF (5V or 0V).</li>
+    <li><code>delay(ms)</code> — pause for that many milliseconds.</li>
+  </ul>
+
+  <h2>6.2 Breadboards and buttons</h2>
+  <ul>
+    <li>A <strong>breadboard</strong> is a reusable board with hidden wires that connect rows of holes — you push components in instead of soldering.</li>
+    <li>A <strong>button</strong> connects a pin to either +5V or GND when pressed.</li>
+    <li>Use a <strong>pull-down</strong> or <strong>pull-up</strong> resistor so the pin reads a clear HIGH or LOW.</li>
+  </ul>
+
+  <pre class="code">int buttonPin = 2;
+
+void setup() {
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  if (digitalRead(buttonPin) == HIGH) {
+    digitalWrite(13, HIGH);
+  } else {
+    digitalWrite(13, LOW);
+  }
+}</pre>
+
+  <h2>6.3 Latching buttons using variables</h2>
+  <p>A <strong>latch</strong> remembers a state — e.g. one press turns the LED on, the next turns it off, even though the button is only momentarily pushed.</p>
+
+  <pre class="code">int ledState = LOW;
+
+void loop() {
+  if (digitalRead(buttonPin) == HIGH) {
+    ledState = !ledState;     // flip
+    digitalWrite(13, ledState);
+    delay(300);               // debounce
+  }
+}</pre>
+
+  <p>Variables in Arduino C: <code>int</code>, <code>bool</code>, <code>float</code>, <code>String</code>. Always declare with a type.</p>
+
+  <h2>6.4 Analogue input and output</h2>
+
+  <h3>Analogue input</h3>
+  <ul>
+    <li><code>analogRead(A0)</code> returns a value from 0 to 1023.</li>
+    <li>Used with sensors that give a varying voltage (e.g. light sensor, temperature sensor, potentiometer).</li>
+    <li><code>Serial.begin(9600)</code> + <code>Serial.println(value)</code> sends data back to the computer to view in the Serial Monitor.</li>
+  </ul>
+
+  <h3>Analogue output (PWM)</h3>
+  <ul>
+    <li>Arduino digital pins can only be HIGH or LOW. <strong>PWM</strong> (Pulse Width Modulation) fakes analogue output by switching very fast — average voltage is between 0V and 5V.</li>
+    <li><code>analogWrite(pin, value)</code> with <code>value</code> 0–255 — used to dim LEDs, control motor speed, etc.</li>
+    <li>Only works on certain pins (marked with <strong>~</strong>).</li>
+  </ul>
+
+  <h2>6.5 Subroutines</h2>
+  <p>Pull repeated code into a function, just like in Python:</p>
+  <pre class="code">void blink(int pin, int times) {
+  for (int i = 0; i &lt; times; i++) {
+    digitalWrite(pin, HIGH);
+    delay(200);
+    digitalWrite(pin, LOW);
+    delay(200);
+  }
+}
+
+void loop() {
+  blink(13, 3);
+  delay(1000);
+}</pre>
+
+  <ul>
+    <li><code>void</code> means the function doesn't return a value.</li>
+    <li>Parameters allow the same code to do different things.</li>
+  </ul>
+
+  <h2>6.6 Making a useful system</h2>
+  <p>Combine inputs, outputs and logic to build something real.</p>
+  <ul>
+    <li><strong>Temperature sensor</strong> — outputs a voltage that depends on temperature; read with <code>analogRead</code>.</li>
+    <li><strong>LDR (light sensor)</strong> — resistance changes with light; in a divider circuit, gives a varying analogue voltage.</li>
+    <li><strong>Motors</strong> need more current than the Arduino can give directly — use a transistor (e.g. NPN) as a switch, with the motor powered separately.</li>
+  </ul>
+
+  <div class="box box-example">
+    <div class="box-label">Example project — automatic light</div>
+    <p>Read the LDR. If it's dark (analogRead value below threshold), turn the LED on. Otherwise turn it off. A simple "smart" night light.</p>
+  </div>
+
+  <div class="quick-ref">
+    <h3>Quick reference</h3>
+    <ul>
+      <li>Sketch shape: <code>setup()</code> runs once, <code>loop()</code> runs forever</li>
+      <li><code>pinMode</code>, <code>digitalRead/Write</code>, <code>analogRead</code>, <code>analogWrite</code>, <code>delay</code></li>
+      <li>analogRead: 0–1023 (10-bit). analogWrite (PWM): 0–255</li>
+      <li>Use a transistor + separate supply for motors</li>
+      <li>Subroutines: <code>void name(params) { … }</code></li>
+    </ul>
+  </div>
+
+  <div class="prev-next">
+    <a href="index.html">
+      <span class="label">← Back</span>
+      All modules
+    </a>
+    <a href="module-6-practice.html">
+      <span class="label">Next →</span>
+      Practice questions
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>

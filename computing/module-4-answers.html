@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 Answers</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 4 · Answers</p>
+    <h1>Answers &amp; explanations</h1>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-4.html" class="page-tab">Notes</a>
+    <a href="module-4-practice.html" class="page-tab">Practice</a>
+    <a href="module-4-answers.html" class="page-tab active">Answers</a>
+  </nav>
+
+  <h2 class="section-divider">Section A — Easy</h2>
+
+  <div class="answer">
+    <div class="answer-num">01</div>
+    <div class="answer-body">
+      <span class="final">(a) A character or object on the stage. (b) The background image of the stage. (c) An alternative appearance for a sprite.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">02</div>
+    <div class="answer-body">
+      <span class="final">Motion (blue).</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">03</div>
+    <div class="answer-body">
+      <span class="final">"When green flag clicked".</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">04</div>
+    <div class="answer-body">
+      <span class="final">Any two: score, lives, level, time remaining, player name, current speed.</span>
+    </div>
+  </div>
+
+  <h2 class="section-divider">Section B — Medium</h2>
+
+  <div class="answer">
+    <div class="answer-num">05</div>
+    <div class="answer-body">
+      <span class="final">When green flag clicked → forever (or repeat) → move 10 steps → next costume → wait 0.1 seconds. The next costume + small wait gives the walking-animation effect.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">06</div>
+    <div class="answer-body">
+      <pre class="code">when [right arrow] key pressed
+   change x by 10</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">07</div>
+    <div class="answer-body">
+      <span class="final">When the player loses, broadcast a message ("game over"). The "Game over" sprite has a script: when I receive [game over] → show. At the start of the game it hides itself.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">08</div>
+    <div class="answer-body">
+      <span class="final">If you don't reset it, the score from the previous game would still be there when you start a new game. "Set to 0" guarantees a fresh start every time.</span>
+    </div>
+  </div>
+
+  <h2 class="section-divider">Section C — Hard</h2>
+
+  <div class="answer">
+    <div class="answer-num">09</div>
+    <div class="answer-body">
+      <span class="final">Sprites: basket (player), apple (falling). Variables: score, lives.<br>Apple script: when green flag clicked → forever → go to random x at top → glide down → if touching basket then change score by 1; otherwise change lives by −1; if lives = 0, broadcast "game over".<br>Basket script: when right/left arrow pressed → change x by ±10.<br>Game over sprite: hide at start; when I receive "game over" → show, stop all.</span>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">10</div>
+    <div class="answer-body">
+      <pre class="code">when green flag clicked
+set [time_left] to 30
+repeat until &lt;time_left = 0&gt;
+   wait 1 seconds
+   change [time_left] by -1
+say "Time's up!"
+stop all</pre>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="answer-num">11</div>
+    <div class="answer-body">
+      <span class="final">Cause: the script doesn't include an "if on edge, bounce" block, so the sprite keeps going past the edge. Fix: in the cat's forever loop, add the "if on edge, bounce" block after the move.</span>
+    </div>
+  </div>
+
+  <div class="prev-next">
+    <a href="module-4-practice.html">
+      <span class="label">← Back</span>
+      Practice
+    </a>
+    <a href="index.html">
+      <span class="label">Next →</span>
+      All modules
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>
