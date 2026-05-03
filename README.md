@@ -4,7 +4,7 @@ A small revision website with notes, practice questions and answers, aligned to 
 
 **Live site:** https://ap-johns.github.io/eilidh-school/
 
-Top-level subjects: **Maths**, **Science**, **Computing**. Maths is in progress (Module 1 ready). Science and Computing come once Maths is complete.
+Top-level subjects: **Maths**, **Science**, **Computing**. All eight Maths modules are ready. Science and Computing come next.
 
 ---
 
@@ -54,10 +54,10 @@ Future subjects will live in sibling folders: `science/`, `computing/`. Modules 
 | Module | Topic | Status |
 |--------|-------|--------|
 | 1 | Negative numbers & sequences | ✓ Ready |
-| 2 | Decimals & linear graphs | — |
-| 3 | Angles, polygons & constructions | — |
-| 4 | Fractions & percentages | — |
-| 5 | Algebra & circles | — |
-| 6 | Equations & 2D shapes | — |
-| 7 | 3D shapes & Pythagoras | — |
-| 8 | Ratio, proportion & statistics | — |
+| 2 | Decimals & linear graphs | ✓ Ready |
+| 3 | Angles, polygons & constructions | ✓ Ready |
+| 4 | Fractions & percentages | ✓ Ready |
+| 5 | Algebra & circles | ✓ Ready |
+| 6 | Equations & 2D shapes | ✓ Ready |
+| 7 | 3D shapes & Pythagoras | ✓ Ready |
+| 8 | Ratio, proportion & statistics | ✓ Ready |

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 7 — 3D shapes &amp; Pythagoras</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Eilidh's Year 8</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="module-intro">
+    <p class="module-label">Module 7</p>
+    <h1>3D shapes &amp; Pythagoras</h1>
+    <p class="lede">Quick-reference revision notes for parents.</p>
+  </div>
+
+  <nav class="page-tabs">
+    <a href="module-7.html" class="page-tab active">Notes</a>
+    <a href="module-7-practice.html" class="page-tab">Practice</a>
+    <a href="module-7-answers.html" class="page-tab">Answers</a>
+  </nav>
+
+  <h2>7.1 Properties of 3D shapes</h2>
+
+  <table>
+    <thead><tr><th>Shape</th><th>Faces</th><th>Edges</th><th>Vertices</th></tr></thead>
+    <tbody>
+      <tr><td>Cube</td><td>6</td><td>12</td><td>8</td></tr>
+      <tr><td>Cuboid</td><td>6</td><td>12</td><td>8</td></tr>
+      <tr><td>Triangular prism</td><td>5</td><td>9</td><td>6</td></tr>
+      <tr><td>Square-based pyramid</td><td>5</td><td>8</td><td>5</td></tr>
+      <tr><td>Tetrahedron</td><td>4</td><td>6</td><td>4</td></tr>
+      <tr><td>Cylinder</td><td>3*</td><td>2</td><td>0</td></tr>
+      <tr><td>Sphere</td><td>1</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size: 0.85em; color: var(--ink-faint);">*counting curved surfaces.</p>
+
+  <p><strong>Euler's rule</strong> for shapes with flat faces: <span class="mono">F + V − E = 2</span>.</p>
+
+  <h2>7.2 Nets</h2>
+  <p>A <strong>net</strong> is a 2D layout that folds up into the 3D shape. A cube has 11 different nets. The key: every face of the 3D shape appears once in the net.</p>
+
+  <div class="box box-tip">
+    <div class="box-label">Test for a cube net</div>
+    <p>It must have 6 squares. Mentally fold it — opposite faces should not be next to each other in the net.</p>
+  </div>
+
+  <h2>7.3 Surface area and volume of a cuboid</h2>
+
+  <p><strong>Volume</strong>:</p>
+  <p class="mono-block">V = length × width × height</p>
+
+  <p><strong>Surface area</strong> (sum of all six rectangles):</p>
+  <p class="mono-block">SA = 2(lw + lh + wh)</p>
+
+  <div class="box box-example">
+    <div class="box-label">Worked example — cuboid 5 × 3 × 4 cm</div>
+    <p class="mono-block">V = 5 × 3 × 4 = <strong>60 cm³</strong><br>SA = 2(5×3 + 5×4 + 3×4) = 2(15 + 20 + 12) = 2 × 47 = <strong>94 cm²</strong></p>
+  </div>
+
+  <div class="box box-warn">
+    <div class="box-label">Watch out — units</div>
+    <p>Volume uses <strong>cm³</strong>, area uses <strong>cm²</strong>, length uses <strong>cm</strong>. Mixing them up loses easy marks.</p>
+  </div>
+
+  <h2>7.4 Pythagoras' theorem</h2>
+  <p>For a <strong>right-angled triangle</strong> with legs <span class="mono">a</span>, <span class="mono">b</span> and hypotenuse <span class="mono">c</span> (the longest side, opposite the right angle):</p>
+  <p class="mono-block"><strong>a² + b² = c²</strong></p>
+
+  <h3>Finding the hypotenuse</h3>
+  <p>Add the squares of the two shorter sides, then take the square root.</p>
+
+  <div class="box box-example">
+    <div class="box-label">Worked example — legs 3 and 4</div>
+    <p class="mono-block">c² = 3² + 4² = 9 + 16 = 25<br>c = √25 = <strong>5</strong></p>
+  </div>
+
+  <h3>Finding a shorter side</h3>
+  <p>Subtract the squares.</p>
+
+  <div class="box box-example">
+    <div class="box-label">Worked example — hypotenuse 13, one leg 5</div>
+    <p class="mono-block">a² = 13² − 5² = 169 − 25 = 144<br>a = √144 = <strong>12</strong></p>
+  </div>
+
+  <h2>7.5 Applying Pythagoras directly</h2>
+  <p>Many problems hide a right-angled triangle. Look for ladders, distances, diagonals.</p>
+
+  <div class="box box-example">
+    <div class="box-label">Worked example</div>
+    <p>A 5m ladder leans against a wall, with its base 1.4m from the wall. How high up the wall does it reach?</p>
+    <p class="mono-block">h² = 5² − 1.4² = 25 − 1.96 = 23.04<br>h = √23.04 = <strong>4.8 m</strong></p>
+  </div>
+
+  <div class="quick-ref">
+    <h3>Quick reference</h3>
+    <ul>
+      <li>Cuboid volume: l × w × h</li>
+      <li>Cuboid surface area: 2(lw + lh + wh)</li>
+      <li>Pythagoras: a² + b² = c² (c is the hypotenuse)</li>
+      <li>Hypotenuse is opposite the right angle and the longest side</li>
+      <li>Always identify which side is the hypotenuse before applying the formula</li>
+    </ul>
+  </div>
+
+  <div class="prev-next">
+    <a href="index.html">
+      <span class="label">← Back</span>
+      All modules
+    </a>
+    <a href="module-7-practice.html">
+      <span class="label">Next →</span>
+      Practice questions
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Made with love for Eilidh
+</footer>
+
+</body>
+</html>
