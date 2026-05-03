@@ -40,6 +40,17 @@
     <p class="mono-block">x = 360 − 80 − 110 − 95 = <strong>75°</strong></p>
   </div>
 
+  <figure class="diagram">
+    <svg viewBox="0 0 320 200" role="img" aria-label="Quadrilateral with four labelled angles summing to 360 degrees">
+      <polygon points="60,40 240,30 280,140 40,170" fill="none" class="stroke-line" stroke-width="2"/>
+      <text x="78" y="60" class="label-accent">80°</text>
+      <text x="208" y="55" class="label-accent">110°</text>
+      <text x="240" y="132" class="label-accent">95°</text>
+      <text x="60" y="158" class="label-accent">x</text>
+    </svg>
+    <figcaption>The four interior angles always sum to 360°.</figcaption>
+  </figure>
+
   <h2>3.2 Parallel lines</h2>
   <p>When a straight line (transversal) crosses two parallel lines, three angle relationships appear:</p>
 
@@ -56,6 +67,45 @@
       <div class="card-title">Co-interior (C-shape)</div>
       <div class="card-desc">Add to 180°. Same side of the transversal, between the parallel lines.</div>
     </div>
+  </div>
+
+  <div class="diagram-row">
+    <figure class="diagram">
+      <svg viewBox="0 0 200 160" role="img" aria-label="F shape — corresponding angles">
+        <line x1="20" y1="50" x2="180" y2="50" class="stroke-line" stroke-width="2"/>
+        <line x1="20" y1="110" x2="180" y2="110" class="stroke-line" stroke-width="2"/>
+        <line x1="46" y1="15" x2="154" y2="145" class="stroke-soft" stroke-width="2"/>
+        <path d="M 89 50 A 14 14 0 0 1 84 61" fill="none" class="stroke-accent" stroke-width="2"/>
+        <path d="M 139 110 A 14 14 0 0 1 134 121" fill="none" class="stroke-accent" stroke-width="2"/>
+        <text x="92" y="70" class="label-accent">a</text>
+        <text x="142" y="130" class="label-accent">a</text>
+      </svg>
+      <figcaption><strong>F</strong> — Corresponding<br>(equal)</figcaption>
+    </figure>
+    <figure class="diagram">
+      <svg viewBox="0 0 200 160" role="img" aria-label="Z shape — alternate angles">
+        <line x1="20" y1="50" x2="180" y2="50" class="stroke-line" stroke-width="2"/>
+        <line x1="20" y1="110" x2="180" y2="110" class="stroke-line" stroke-width="2"/>
+        <line x1="46" y1="15" x2="154" y2="145" class="stroke-soft" stroke-width="2"/>
+        <path d="M 89 50 A 14 14 0 0 1 84 61" fill="none" class="stroke-accent" stroke-width="2"/>
+        <path d="M 111 110 A 14 14 0 0 1 116 99" fill="none" class="stroke-accent" stroke-width="2"/>
+        <text x="92" y="70" class="label-accent">a</text>
+        <text x="98" y="105" class="label-accent">a</text>
+      </svg>
+      <figcaption><strong>Z</strong> — Alternate<br>(equal)</figcaption>
+    </figure>
+    <figure class="diagram">
+      <svg viewBox="0 0 200 160" role="img" aria-label="C shape — co-interior angles">
+        <line x1="20" y1="50" x2="180" y2="50" class="stroke-line" stroke-width="2"/>
+        <line x1="20" y1="110" x2="180" y2="110" class="stroke-line" stroke-width="2"/>
+        <line x1="46" y1="15" x2="154" y2="145" class="stroke-soft" stroke-width="2"/>
+        <path d="M 89 50 A 14 14 0 0 1 84 61" fill="none" class="stroke-accent" stroke-width="2"/>
+        <path d="M 116 99 A 14 14 0 0 1 139 110" fill="none" class="stroke-accent" stroke-width="2"/>
+        <text x="92" y="70" class="label-accent">a</text>
+        <text x="140" y="103" class="label-accent">b</text>
+      </svg>
+      <figcaption><strong>C</strong> — Co-interior<br>(a + b = 180°)</figcaption>
+    </figure>
   </div>
 
   <div class="box box-tip">
@@ -80,6 +130,19 @@
     <p class="mono-block">Sum interior = (6 − 2) × 180 = 720°<br>Each interior = 720 ÷ 6 = <strong>120°</strong><br>Each exterior = 360 ÷ 6 = <strong>60°</strong></p>
   </div>
 
+  <figure class="diagram">
+    <svg viewBox="0 0 220 200" role="img" aria-label="Regular pentagon showing interior and exterior angles">
+      <polygon points="100,40 148,75 129,130 71,130 52,75" fill="none" class="stroke-line" stroke-width="2"/>
+      <line x1="148" y1="75" x2="190" y2="106" class="stroke-soft" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <path d="M 115 51 A 18 18 0 0 1 85 51" fill="none" class="stroke-accent" stroke-width="2"/>
+      <text x="86" y="68" class="label-accent">108°</text>
+      <path d="M 163 86 A 18 18 0 0 1 142 92" fill="none" class="stroke-accent" stroke-width="2"/>
+      <text x="155" y="112" class="label-accent">72°</text>
+      <text x="40" y="195" class="label-soft">Interior + exterior = 180° at each vertex</text>
+    </svg>
+    <figcaption>Regular pentagon (n = 5): interior 108°, exterior 72°.</figcaption>
+  </figure>
+
   <h2>3.4 Using a protractor</h2>
   <ol>
     <li>Place the centre cross on the angle's vertex</li>
@@ -98,6 +161,39 @@
   <div class="box box-example">
     <div class="box-label">Examples</div>
     <p class="mono-block">North = 000° (or 360°)<br>East = 090°<br>South = 180°<br>West = 270°<br>North-east = 045°</p>
+  </div>
+
+  <div class="diagram-row" style="grid-template-columns: 1fr 1fr;">
+    <figure class="diagram">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Compass rose showing the four cardinal bearings">
+        <circle cx="100" cy="100" r="65" fill="none" class="stroke-soft" stroke-width="1"/>
+        <line x1="100" y1="25" x2="100" y2="175" class="stroke-soft" stroke-width="1"/>
+        <line x1="25" y1="100" x2="175" y2="100" class="stroke-soft" stroke-width="1"/>
+        <text x="100" y="20" text-anchor="middle" class="label-accent">N</text>
+        <text x="183" y="105" class="label-accent">E</text>
+        <text x="100" y="195" text-anchor="middle" class="label-accent">S</text>
+        <text x="10" y="105" class="label-accent">W</text>
+        <text x="100" y="42" text-anchor="middle" class="label-soft">000°</text>
+        <text x="155" y="95" class="label-soft">090°</text>
+        <text x="100" y="170" text-anchor="middle" class="label-soft">180°</text>
+        <text x="35" y="95" class="label-soft">270°</text>
+      </svg>
+      <figcaption>Cardinal bearings.</figcaption>
+    </figure>
+    <figure class="diagram">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Bearing of B from A is 050 degrees, measured clockwise from North">
+        <line x1="100" y1="35" x2="100" y2="100" class="stroke-soft" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <text x="100" y="28" text-anchor="middle" class="label-soft">N</text>
+        <line x1="100" y1="100" x2="161" y2="49" class="stroke-accent" stroke-width="2"/>
+        <polygon points="161,49 156,58 151,52" class="fill-accent"/>
+        <circle cx="100" cy="100" r="3" class="fill-accent"/>
+        <text x="86" y="115" class="label-accent">A</text>
+        <text x="167" y="46" class="label-accent">B</text>
+        <path d="M 100 75 A 25 25 0 0 1 119 84" fill="none" class="stroke-accent" stroke-width="2"/>
+        <text x="115" y="74" class="label-accent">050°</text>
+      </svg>
+      <figcaption>Bearing of B from A: 050°<br>(clockwise from N).</figcaption>
+    </figure>
   </div>
 
   <h2>3.6 Scale drawings</h2>
@@ -120,6 +216,26 @@
       <tr><td>One side + two angles (ASA)</td><td>Ruler + protractor</td></tr>
     </tbody>
   </table>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 240 170" role="img" aria-label="SSS construction: triangle built from three side lengths using arcs">
+      <line x1="40" y1="130" x2="200" y2="130" class="stroke-line" stroke-width="2"/>
+      <line x1="40" y1="130" x2="134" y2="56" class="stroke-line" stroke-width="2"/>
+      <line x1="200" y1="130" x2="134" y2="56" class="stroke-line" stroke-width="2"/>
+      <path d="M 115 60 A 120 120 0 0 1 145 50" fill="none" class="stroke-soft" stroke-dasharray="3 2" stroke-width="1.5"/>
+      <path d="M 125 48 A 100 100 0 0 1 155 60" fill="none" class="stroke-soft" stroke-dasharray="3 2" stroke-width="1.5"/>
+      <circle cx="40" cy="130" r="3" class="fill-accent"/>
+      <circle cx="200" cy="130" r="3" class="fill-accent"/>
+      <circle cx="134" cy="56" r="3" class="fill-accent"/>
+      <text x="32" y="148" class="label-accent">A</text>
+      <text x="198" y="148" class="label-accent">B</text>
+      <text x="129" y="48" class="label-accent">C</text>
+      <text x="110" y="148" class="label-soft">8 cm</text>
+      <text x="60" y="100" class="label-soft">6 cm</text>
+      <text x="172" y="100" class="label-soft">5 cm</text>
+    </svg>
+    <figcaption>SSS: arcs from A (radius = AC) and B (radius = BC) intersect at C.</figcaption>
+  </figure>
 
   <div class="quick-ref">
     <h3>Quick reference</h3>

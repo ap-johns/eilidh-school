@@ -727,6 +727,64 @@ td .mono { background: transparent; padding: 0; color: var(--ink); }
 }
 
 /* ==========================================================
+   Diagrams (inline SVG)
+   ========================================================== */
+
+.diagram {
+  margin: 24px 0;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.diagram svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.diagram figcaption {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.diagram-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.diagram-row .diagram {
+  margin: 0;
+  padding: 12px;
+}
+
+.diagram-row .diagram figcaption {
+  margin-top: 8px;
+  font-size: 0.85em;
+}
+
+@media (max-width: 600px) {
+  .diagram-row { grid-template-columns: 1fr; }
+}
+
+/* SVG colours — use CSS vars for theme integration */
+.diagram svg .stroke-line { stroke: var(--ink); }
+.diagram svg .stroke-accent { stroke: var(--accent); }
+.diagram svg .stroke-soft { stroke: var(--ink-faint); }
+.diagram svg .fill-accent { fill: var(--accent); }
+.diagram svg .fill-tip { fill: var(--tip-text); }
+.diagram svg text { fill: var(--ink); font-family: var(--sans); font-size: 14px; }
+.diagram svg text.label-accent { fill: var(--accent); font-weight: 600; }
+.diagram svg text.label-soft { fill: var(--ink-soft); font-size: 12px; }
+
+/* ==========================================================
    Print
    ========================================================== */
 
