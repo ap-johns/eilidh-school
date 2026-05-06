@@ -756,12 +756,18 @@ td .mono { background: transparent; padding: 0; color: var(--ink); }
   text-align: center;
 }
 
-.diagram svg {
+.diagram svg,
+.diagram img {
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   overflow: visible;
+}
+
+.diagram img {
+  background: #fff;
+  border-radius: 4px;
 }
 
 .diagram figcaption {
