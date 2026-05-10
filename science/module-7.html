@@ -69,12 +69,123 @@
     </tbody>
   </table>
 
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 320" role="img" aria-label="Continuous variation drawn as a histogram of heights forming a bell curve, versus discontinuous variation drawn as a bar chart of blood types" font-family="Manrope, sans-serif">
+      <!-- Panel 1: Continuous histogram -->
+      <text x="180" y="30" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Continuous (e.g. height)</text>
+      <line x1="60" y1="60" x2="60" y2="240" stroke="#6e6c63" stroke-width="1.2"/>
+      <line x1="60" y1="240" x2="320" y2="240" stroke="#6e6c63" stroke-width="1.2"/>
+      <g fill="#9bbfde" stroke="#1a1d22" stroke-width="0.6">
+        <rect x="70" y="220" width="24" height="20"/>
+        <rect x="94" y="200" width="24" height="40"/>
+        <rect x="118" y="170" width="24" height="70"/>
+        <rect x="142" y="130" width="24" height="110"/>
+        <rect x="166" y="100" width="24" height="140"/>
+        <rect x="190" y="100" width="24" height="140"/>
+        <rect x="214" y="130" width="24" height="110"/>
+        <rect x="238" y="170" width="24" height="70"/>
+        <rect x="262" y="200" width="24" height="40"/>
+        <rect x="286" y="220" width="24" height="20"/>
+      </g>
+      <text x="190" y="262" text-anchor="middle" fill="#a8a59c" font-size="11">height (cm)</text>
+      <text x="55" y="150" text-anchor="end" fill="#a8a59c" font-size="11">count</text>
+      <text x="190" y="285" text-anchor="middle" fill="#a8a59c" font-size="10">any value within a range</text>
+      <text x="190" y="300" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">use a histogram</text>
+
+      <line x1="360" y1="20" x2="360" y2="310" stroke="#3a3d44" stroke-width="0.8" stroke-dasharray="3 4"/>
+
+      <!-- Panel 2: Discontinuous bar chart -->
+      <text x="540" y="30" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Discontinuous (e.g. blood type)</text>
+      <line x1="400" y1="60" x2="400" y2="240" stroke="#6e6c63" stroke-width="1.2"/>
+      <line x1="400" y1="240" x2="680" y2="240" stroke="#6e6c63" stroke-width="1.2"/>
+      <rect x="430" y="100" width="44" height="140" fill="#d4a866" stroke="#1a1d22" stroke-width="0.8"/>
+      <rect x="494" y="170" width="44" height="70" fill="#d4a866" stroke="#1a1d22" stroke-width="0.8"/>
+      <rect x="558" y="210" width="44" height="30" fill="#d4a866" stroke="#1a1d22" stroke-width="0.8"/>
+      <rect x="622" y="80" width="44" height="160" fill="#d4a866" stroke="#1a1d22" stroke-width="0.8"/>
+      <text x="452" y="258" text-anchor="middle" fill="#a8a59c" font-size="11">A</text>
+      <text x="516" y="258" text-anchor="middle" fill="#a8a59c" font-size="11">B</text>
+      <text x="580" y="258" text-anchor="middle" fill="#a8a59c" font-size="11">AB</text>
+      <text x="644" y="258" text-anchor="middle" fill="#a8a59c" font-size="11">O</text>
+      <text x="395" y="150" text-anchor="end" fill="#a8a59c" font-size="11">count</text>
+      <text x="540" y="285" text-anchor="middle" fill="#a8a59c" font-size="10">only certain categories</text>
+      <text x="540" y="300" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">use a bar chart</text>
+    </svg>
+    <figcaption>Continuous data lives anywhere in a range, so the bars touch (a histogram) and form a smooth curve. Discontinuous data sits in distinct categories, so the bars stand apart with gaps between (a bar chart).</figcaption>
+  </figure>
+
   <h2>7.5 Inheritance</h2>
   <ul>
     <li>Inside cell nuclei are <strong>chromosomes</strong> (humans have 23 pairs).</li>
     <li>Chromosomes contain <strong>genes</strong> — sections of <strong>DNA</strong> that code for features.</li>
     <li>You inherit one of each chromosome from each parent — half your DNA from mum, half from dad.</li>
   </ul>
+
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 280" role="img" aria-label="Zoom from cell to nucleus to chromosome to DNA double helix to a gene — successive levels of organisation that hold genetic information" font-family="Manrope, sans-serif">
+      <!-- Panel 1: Cell -->
+      <circle cx="90" cy="110" r="55" fill="#1f2127" stroke="#a8a59c" stroke-width="1.4"/>
+      <circle cx="98" cy="100" r="22" fill="#c97564" stroke="#1a1d22" stroke-width="1"/>
+      <text x="98" y="103" text-anchor="middle" fill="#1a1d22" font-size="9" font-weight="700">nucleus</text>
+      <text x="90" y="200" text-anchor="middle" fill="#e8e6e0" font-size="12" font-weight="600">Cell</text>
+      <text x="90" y="216" text-anchor="middle" fill="#a8a59c" font-size="10">contains a nucleus</text>
+
+      <!-- Arrow 1 -->
+      <line x1="155" y1="110" x2="185" y2="110" stroke="#d4a866" stroke-width="1.4"/>
+      <polygon points="185,110 178,106 178,114" fill="#d4a866"/>
+
+      <!-- Panel 2: Chromosome (X-shape) -->
+      <line x1="225" y1="70" x2="275" y2="150" stroke="#9bbfde" stroke-width="14" stroke-linecap="round"/>
+      <line x1="275" y1="70" x2="225" y2="150" stroke="#9bbfde" stroke-width="14" stroke-linecap="round"/>
+      <circle cx="250" cy="110" r="3" fill="#1a1d22"/>
+      <text x="250" y="200" text-anchor="middle" fill="#9bbfde" font-size="12" font-weight="600">Chromosome</text>
+      <text x="250" y="216" text-anchor="middle" fill="#a8a59c" font-size="10">23 pairs in humans</text>
+
+      <!-- Arrow 2 -->
+      <line x1="315" y1="110" x2="345" y2="110" stroke="#d4a866" stroke-width="1.4"/>
+      <polygon points="345,110 338,106 338,114" fill="#d4a866"/>
+
+      <!-- Panel 3: DNA double helix -->
+      <g fill="none" stroke="#a3c89a" stroke-width="2.2">
+        <path d="M 410 60 Q 425 75 410 90 Q 395 105 410 120 Q 425 135 410 150 Q 395 165 410 180"/>
+        <path d="M 410 60 Q 395 75 410 90 Q 425 105 410 120 Q 395 135 410 150 Q 425 165 410 180"/>
+      </g>
+      <g stroke="#d4a866" stroke-width="1.4">
+        <line x1="397" y1="75" x2="423" y2="75"/>
+        <line x1="397" y1="105" x2="423" y2="105"/>
+        <line x1="397" y1="135" x2="423" y2="135"/>
+        <line x1="397" y1="165" x2="423" y2="165"/>
+      </g>
+      <text x="410" y="200" text-anchor="middle" fill="#a3c89a" font-size="12" font-weight="600">DNA</text>
+      <text x="410" y="216" text-anchor="middle" fill="#a8a59c" font-size="10">two-stranded molecule</text>
+
+      <!-- Arrow 3 -->
+      <line x1="455" y1="110" x2="485" y2="110" stroke="#d4a866" stroke-width="1.4"/>
+      <polygon points="485,110 478,106 478,114" fill="#d4a866"/>
+
+      <!-- Panel 4: Gene (a labelled segment of DNA) -->
+      <g stroke="#a3c89a" stroke-width="2.5" fill="none">
+        <line x1="510" y1="80" x2="700" y2="80"/>
+        <line x1="510" y1="140" x2="700" y2="140"/>
+      </g>
+      <g stroke-width="1.4">
+        <line x1="525" y1="80" x2="525" y2="140" stroke="#d4a866"/>
+        <line x1="545" y1="80" x2="545" y2="140" stroke="#9bbfde"/>
+        <line x1="565" y1="80" x2="565" y2="140" stroke="#c97564"/>
+        <line x1="585" y1="80" x2="585" y2="140" stroke="#d4a866"/>
+        <line x1="605" y1="80" x2="605" y2="140" stroke="#a3c89a"/>
+        <line x1="625" y1="80" x2="625" y2="140" stroke="#9bbfde"/>
+        <line x1="645" y1="80" x2="645" y2="140" stroke="#c97564"/>
+        <line x1="665" y1="80" x2="665" y2="140" stroke="#d4a866"/>
+        <line x1="685" y1="80" x2="685" y2="140" stroke="#a3c89a"/>
+      </g>
+      <!-- Highlight gene region -->
+      <rect x="555" y="68" width="80" height="84" fill="none" stroke="#d4a866" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <text x="595" y="62" text-anchor="middle" fill="#d4a866" font-size="10" font-weight="600">gene</text>
+      <text x="605" y="200" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="600">Gene</text>
+      <text x="605" y="216" text-anchor="middle" fill="#a8a59c" font-size="10">section of DNA coding for a feature</text>
+    </svg>
+    <figcaption>Each level fits inside the one to its left. Every cell has a nucleus, the nucleus holds chromosomes, each chromosome is one long molecule of DNA tightly packed, and a gene is just a section of that DNA that codes for one feature (eye colour, blood type, etc.).</figcaption>
+  </figure>
 
   <h2>7.6 Natural selection</h2>
   <p><strong>Charles Darwin's theory</strong> — explains how species evolve over time.</p>
@@ -90,6 +201,66 @@
     <div class="box-label">Classic example — peppered moth</div>
     <p>Before the Industrial Revolution, light-coloured moths were camouflaged on light tree bark. Soot from factories darkened the trees, so dark moths now had the advantage. Within decades, the population was mostly dark.</p>
   </div>
+
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 320" role="img" aria-label="Peppered moth before and after the Industrial Revolution: light moths camouflage on clean light bark, dark moths camouflage on soot-darkened bark" font-family="Manrope, sans-serif">
+      <!-- Panel 1: Before -->
+      <text x="180" y="28" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Before — clean light bark</text>
+      <!-- Tree trunk light -->
+      <rect x="160" y="50" width="40" height="220" fill="#d8d2c0" stroke="#a8a59c" stroke-width="1.2"/>
+      <g stroke="#a8a59c" stroke-width="0.6" fill="none" opacity="0.5">
+        <line x1="165" y1="80" x2="195" y2="100"/>
+        <line x1="165" y1="160" x2="195" y2="180"/>
+        <line x1="165" y1="220" x2="195" y2="240"/>
+      </g>
+      <!-- Light moths (camouflaged) -->
+      <g fill="#e8e6e0" stroke="#a8a59c" stroke-width="0.6">
+        <ellipse cx="172" cy="115" rx="10" ry="6"/>
+        <ellipse cx="190" cy="148" rx="10" ry="6"/>
+        <ellipse cx="172" cy="185" rx="10" ry="6"/>
+        <ellipse cx="190" cy="225" rx="10" ry="6"/>
+      </g>
+      <!-- Dark moth (visible) -->
+      <ellipse cx="180" cy="80" rx="10" ry="6" fill="#1a1d22" stroke="#e8e6e0" stroke-width="1"/>
+      <!-- Bird arrow toward dark moth -->
+      <line x1="80" y1="80" x2="165" y2="80" stroke="#c97564" stroke-width="1.4"/>
+      <polygon points="165,80 158,76 158,84" fill="#c97564"/>
+      <text x="65" y="72" fill="#c97564" font-size="11" font-weight="600">bird</text>
+      <text x="65" y="86" fill="#a8a59c" font-size="9">spots dark</text>
+      <text x="65" y="98" fill="#a8a59c" font-size="9">moth easily</text>
+      <text x="180" y="290" text-anchor="middle" fill="#e8e6e0" font-size="11" font-weight="600">light moths blend in</text>
+      <text x="180" y="305" text-anchor="middle" fill="#a8a59c" font-size="10">dark moths get eaten more</text>
+
+      <line x1="370" y1="20" x2="370" y2="310" stroke="#3a3d44" stroke-width="0.8" stroke-dasharray="3 4"/>
+
+      <!-- Panel 2: After -->
+      <text x="540" y="28" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">After — soot-darkened bark</text>
+      <rect x="520" y="50" width="40" height="220" fill="#3a3d44" stroke="#a8a59c" stroke-width="1.2"/>
+      <g stroke="#1a1d22" stroke-width="0.6" fill="none" opacity="0.5">
+        <line x1="525" y1="80" x2="555" y2="100"/>
+        <line x1="525" y1="160" x2="555" y2="180"/>
+        <line x1="525" y1="220" x2="555" y2="240"/>
+      </g>
+      <!-- Dark moths (camouflaged) -->
+      <g fill="#1a1d22" stroke="#3a3d44" stroke-width="0.6">
+        <ellipse cx="532" cy="115" rx="10" ry="6"/>
+        <ellipse cx="550" cy="148" rx="10" ry="6"/>
+        <ellipse cx="532" cy="185" rx="10" ry="6"/>
+        <ellipse cx="550" cy="225" rx="10" ry="6"/>
+      </g>
+      <!-- Light moth (visible) -->
+      <ellipse cx="540" cy="80" rx="10" ry="6" fill="#e8e6e0" stroke="#1a1d22" stroke-width="1"/>
+      <!-- Bird arrow toward light moth -->
+      <line x1="640" y1="80" x2="556" y2="80" stroke="#c97564" stroke-width="1.4"/>
+      <polygon points="556,80 563,76 563,84" fill="#c97564"/>
+      <text x="660" y="72" fill="#c97564" font-size="11" font-weight="600">bird</text>
+      <text x="660" y="86" fill="#a8a59c" font-size="9">spots light</text>
+      <text x="660" y="98" fill="#a8a59c" font-size="9">moth easily</text>
+      <text x="540" y="290" text-anchor="middle" fill="#e8e6e0" font-size="11" font-weight="600">dark moths blend in</text>
+      <text x="540" y="305" text-anchor="middle" fill="#a8a59c" font-size="10">light moths get eaten more</text>
+    </svg>
+    <figcaption>Same species of moth, two different environments. Whichever colour matches the bark survives to breed; the other gets picked off by birds. Over a few decades, the dark variety came to dominate the industrial population — natural selection in action, fast enough to watch.</figcaption>
+  </figure>
 
   <h2>7.7 Extinction</h2>
   <p>A species is <strong>extinct</strong> when no individuals remain. Causes include:</p>

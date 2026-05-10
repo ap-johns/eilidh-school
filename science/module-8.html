@@ -45,6 +45,46 @@
 
   <p>The crust + uppermost mantle are split into <strong>tectonic plates</strong>. Convection currents in the mantle move them very slowly. Where plates meet, you get <strong>earthquakes</strong>, <strong>volcanoes</strong> and <strong>fold mountains</strong>.</p>
 
+  <figure class="diagram" style="max-width: 600px;">
+    <svg viewBox="0 0 540 400" role="img" aria-label="Cross-section of the Earth showing inner core, outer core, mantle, crust and atmosphere as concentric layers" font-family="Manrope, sans-serif">
+      <!-- Atmosphere -->
+      <circle cx="220" cy="200" r="172" fill="#3d6280" opacity="0.3"/>
+      <!-- Crust -->
+      <circle cx="220" cy="200" r="160" fill="#6b4a3a"/>
+      <!-- Mantle -->
+      <circle cx="220" cy="200" r="152" fill="#c97564"/>
+      <!-- Outer core -->
+      <circle cx="220" cy="200" r="85" fill="#d4a866"/>
+      <!-- Inner core -->
+      <circle cx="220" cy="200" r="42" fill="#f0c97a"/>
+
+      <!-- Leader lines to labels on right -->
+      <line x1="220" y1="42" x2="380" y2="42" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="385" y="40" fill="#9bbfde" font-size="12" font-weight="600">Atmosphere</text>
+      <text x="385" y="55" fill="#a8a59c" font-size="10">~78% N₂ · 21% O₂ · 1% other</text>
+
+      <line x1="370" y1="56" x2="395" y2="80" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="83" fill="#6b4a3a" font-size="12" font-weight="600" stroke="#a8a59c" stroke-width="0.3">Crust</text>
+      <text x="400" y="98" fill="#a8a59c" font-size="10">thin solid outer layer</text>
+
+      <line x1="280" y1="115" x2="395" y2="125" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="128" fill="#c97564" font-size="12" font-weight="600">Mantle</text>
+      <text x="400" y="143" fill="#a8a59c" font-size="10">hot semi-molten rock</text>
+      <text x="400" y="155" fill="#a8a59c" font-size="10">flows slowly</text>
+
+      <line x1="285" y1="170" x2="395" y2="180" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="183" fill="#d4a866" font-size="12" font-weight="600">Outer core</text>
+      <text x="400" y="198" fill="#a8a59c" font-size="10">liquid iron + nickel</text>
+
+      <line x1="240" y1="200" x2="395" y2="230" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="233" fill="#f0c97a" font-size="12" font-weight="600">Inner core</text>
+      <text x="400" y="248" fill="#a8a59c" font-size="10">solid iron + nickel</text>
+
+      <text x="220" y="380" text-anchor="middle" fill="#a8a59c" font-size="10">crust + uppermost mantle = tectonic plates · convection in mantle drives plate motion</text>
+    </svg>
+    <figcaption>Hottest at the centre, coolest at the surface. The inner core is so hot it should melt — but the colossal pressure squeezes it solid. Above it, the liquid outer core is what generates Earth's magnetic field. The mantle's slow convection currents drag the crust's tectonic plates around, building mountains and triggering quakes where they meet.</figcaption>
+  </figure>
+
   <h2>8.2 Sedimentary rocks</h2>
   <ul>
     <li>Formed from layers of sediment (sand, mud, dead organisms) compressed and cemented together over millions of years.</li>
@@ -71,6 +111,50 @@
   <p>Rocks transform from one type to another over geological time:</p>
   <p class="mono-block">weathering → erosion → transport → deposition → compaction → <strong>sedimentary</strong><br>(buried + heat/pressure) → <strong>metamorphic</strong><br>(melted + cooled) → <strong>igneous</strong><br>(uplifted + weathered) back to start</p>
 
+  <figure class="diagram" style="max-width: 660px;">
+    <svg viewBox="0 0 600 400" role="img" aria-label="Rock cycle: igneous, sedimentary and metamorphic rocks transform between each other through weathering, heat and pressure, and melting" font-family="Manrope, sans-serif">
+      <!-- Three rock-type boxes in a triangle -->
+      <rect x="220" y="30" width="160" height="60" rx="8" fill="#1f2127" stroke="#a3c89a" stroke-width="1.6"/>
+      <text x="300" y="55" text-anchor="middle" fill="#a3c89a" font-size="13" font-weight="700">Sedimentary</text>
+      <text x="300" y="72" text-anchor="middle" fill="#a8a59c" font-size="10">limestone · sandstone · chalk</text>
+
+      <rect x="40" y="280" width="160" height="60" rx="8" fill="#1f2127" stroke="#c97564" stroke-width="1.6"/>
+      <text x="120" y="305" text-anchor="middle" fill="#c97564" font-size="13" font-weight="700">Igneous</text>
+      <text x="120" y="322" text-anchor="middle" fill="#a8a59c" font-size="10">granite · basalt</text>
+
+      <rect x="400" y="280" width="160" height="60" rx="8" fill="#1f2127" stroke="#9bbfde" stroke-width="1.6"/>
+      <text x="480" y="305" text-anchor="middle" fill="#9bbfde" font-size="13" font-weight="700">Metamorphic</text>
+      <text x="480" y="322" text-anchor="middle" fill="#a8a59c" font-size="10">marble · slate</text>
+
+      <!-- Arrows around triangle (clockwise: Igneous → Sedimentary → Metamorphic → Igneous) -->
+      <!-- Igneous → Sedimentary -->
+      <path d="M 165 280 Q 180 180 235 95" fill="none" stroke="#d4a866" stroke-width="1.6"/>
+      <polygon points="235,95 232,104 240,103" fill="#d4a866"/>
+      <text x="120" y="195" fill="#d4a866" font-size="11" font-weight="600">weathering +</text>
+      <text x="120" y="209" fill="#d4a866" font-size="11" font-weight="600">erosion +</text>
+      <text x="120" y="223" fill="#d4a866" font-size="11" font-weight="600">deposition</text>
+
+      <!-- Sedimentary → Metamorphic -->
+      <path d="M 365 95 Q 460 180 470 280" fill="none" stroke="#d4a866" stroke-width="1.6"/>
+      <polygon points="470,280 466,272 474,272" fill="#d4a866"/>
+      <text x="430" y="180" fill="#d4a866" font-size="11" font-weight="600">heat +</text>
+      <text x="430" y="194" fill="#d4a866" font-size="11" font-weight="600">pressure</text>
+      <text x="430" y="208" fill="#a8a59c" font-size="10">(no melting)</text>
+
+      <!-- Metamorphic → Igneous (across bottom) -->
+      <path d="M 400 320 L 200 320" fill="none" stroke="#d4a866" stroke-width="1.6"/>
+      <polygon points="200,320 208,316 208,324" fill="#d4a866"/>
+      <text x="300" y="312" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">melt → magma → cool</text>
+
+      <!-- Inner labels: alternative paths -->
+      <text x="300" y="200" text-anchor="middle" fill="#a8a59c" font-size="10" font-style="italic">any rock can re-enter the cycle</text>
+      <text x="300" y="215" text-anchor="middle" fill="#a8a59c" font-size="10" font-style="italic">if uplifted, weathered or melted</text>
+
+      <text x="300" y="385" text-anchor="middle" fill="#a8a59c" font-size="10">geological time — millions of years</text>
+    </svg>
+    <figcaption>Rocks aren't permanent — given enough time, any one type can become any other. Surface processes (weathering, erosion, deposition) build sedimentary rock. Deep burial squeezes and bakes it into metamorphic. Melting all the way to magma resets the cycle as igneous rock when it cools.</figcaption>
+  </figure>
+
   <h2>8.5 The carbon cycle</h2>
   <p>Carbon moves between living things, the air, the oceans and rocks.</p>
   <ul>
@@ -81,12 +165,139 @@
     <li><strong>Decomposition</strong>: dead material is broken down by microbes, releasing CO₂.</li>
   </ul>
 
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 440" role="img" aria-label="Carbon cycle showing CO2 in the atmosphere moving between plants, animals and fossil fuels through photosynthesis, respiration, feeding, decomposition and combustion" font-family="Manrope, sans-serif">
+      <!-- Atmosphere box -->
+      <rect x="240" y="30" width="240" height="60" rx="8" fill="#1f3a5a" stroke="#9bbfde" stroke-width="1.6"/>
+      <text x="360" y="56" text-anchor="middle" fill="#9bbfde" font-size="14" font-weight="700">Atmosphere</text>
+      <text x="360" y="76" text-anchor="middle" fill="#a8a59c" font-size="11">CO₂ in the air</text>
+
+      <!-- Plants box -->
+      <rect x="60" y="200" width="180" height="60" rx="8" fill="#1f3a2c" stroke="#a3c89a" stroke-width="1.6"/>
+      <text x="150" y="226" text-anchor="middle" fill="#a3c89a" font-size="13" font-weight="700">Plants</text>
+      <text x="150" y="246" text-anchor="middle" fill="#a8a59c" font-size="10">store carbon as plant tissue</text>
+
+      <!-- Animals box -->
+      <rect x="480" y="200" width="180" height="60" rx="8" fill="#3a241e" stroke="#e0a78c" stroke-width="1.6"/>
+      <text x="570" y="226" text-anchor="middle" fill="#e0a78c" font-size="13" font-weight="700">Animals</text>
+      <text x="570" y="246" text-anchor="middle" fill="#a8a59c" font-size="10">eat plants, store carbon</text>
+
+      <!-- Fossil fuels box -->
+      <rect x="270" y="350" width="180" height="60" rx="8" fill="#2d3038" stroke="#a8a59c" stroke-width="1.6"/>
+      <text x="360" y="376" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="700">Fossil fuels</text>
+      <text x="360" y="396" text-anchor="middle" fill="#a8a59c" font-size="10">coal · oil · gas</text>
+
+      <!-- Atmosphere ↓ Plants (photosynthesis) -->
+      <path d="M 290 90 Q 200 130 175 200" fill="none" stroke="#a3c89a" stroke-width="1.6"/>
+      <polygon points="175,200 170,193 178,191" fill="#a3c89a"/>
+      <text x="180" y="135" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">photosynthesis</text>
+
+      <!-- Plants ↑ Atmosphere (respiration) -->
+      <path d="M 200 200 Q 230 130 320 90" fill="none" stroke="#d4a866" stroke-width="1.6"/>
+      <polygon points="320,90 311,90 316,97" fill="#d4a866"/>
+      <text x="270" y="155" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">respiration</text>
+
+      <!-- Plants → Animals (feeding) -->
+      <line x1="240" y1="225" x2="480" y2="225" stroke="#e0a78c" stroke-width="1.6"/>
+      <polygon points="480,225 472,221 472,229" fill="#e0a78c"/>
+      <text x="360" y="218" text-anchor="middle" fill="#e0a78c" font-size="11" font-weight="600">feeding</text>
+
+      <!-- Animals ↑ Atmosphere (respiration) -->
+      <path d="M 540 200 Q 510 130 410 90" fill="none" stroke="#d4a866" stroke-width="1.6"/>
+      <polygon points="410,90 419,90 414,97" fill="#d4a866"/>
+      <text x="475" y="160" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">respiration</text>
+      <text x="475" y="174" text-anchor="middle" fill="#a8a59c" font-size="10">+ decomposition</text>
+
+      <!-- Plants → Fossil fuels (slow burial) -->
+      <path d="M 180 260 Q 230 320 290 350" fill="none" stroke="#6e6c63" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <polygon points="290,350 281,348 285,355" fill="#6e6c63"/>
+      <text x="200" y="320" text-anchor="middle" fill="#a8a59c" font-size="10">buried over</text>
+      <text x="200" y="333" text-anchor="middle" fill="#a8a59c" font-size="10">millions of years</text>
+
+      <!-- Fossil fuels ↑ Atmosphere (combustion) -->
+      <path d="M 360 350 L 360 90" fill="none" stroke="#c97564" stroke-width="2"/>
+      <polygon points="360,90 356,98 364,98" fill="#c97564"/>
+      <text x="370" y="220" fill="#c97564" font-size="11" font-weight="600">combustion</text>
+      <text x="370" y="234" fill="#a8a59c" font-size="10">when burned, all that</text>
+      <text x="370" y="247" fill="#a8a59c" font-size="10">old carbon → CO₂</text>
+    </svg>
+    <figcaption>Carbon shuttles between the air, living things and rocks. Photosynthesis pulls CO₂ down; respiration, decomposition and combustion put it back. The natural cycle balances in/out — until burning fossil fuels (carbon stored over millions of years) returns it all at once, and atmospheric CO₂ rises faster than the cycle can absorb.</figcaption>
+  </figure>
+
   <h2>8.6 Global heating</h2>
   <ul>
     <li>Burning fossil fuels and deforestation increase atmospheric CO₂.</li>
     <li>CO₂ and methane are <strong>greenhouse gases</strong> — they trap infrared radiation, warming the Earth.</li>
     <li>This extra warming is the <strong>enhanced greenhouse effect</strong>.</li>
   </ul>
+
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 380" role="img" aria-label="Greenhouse effect: sunlight passes through the atmosphere and warms the Earth, the Earth re-emits infrared, and greenhouse gas molecules trap some of that infrared which warms the surface further" font-family="Manrope, sans-serif">
+      <!-- Sun -->
+      <circle cx="70" cy="60" r="24" fill="#d4a866"/>
+      <g stroke="#d4a866" stroke-width="2">
+        <line x1="70" y1="20" x2="70" y2="32"/>
+        <line x1="30" y1="60" x2="42" y2="60"/>
+        <line x1="42" y1="32" x2="50" y2="40"/>
+        <line x1="42" y1="88" x2="50" y2="80"/>
+      </g>
+      <text x="70" y="115" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">Sun</text>
+
+      <!-- Sunlight rays (yellow) coming down through atmosphere to surface -->
+      <g stroke="#d4a866" stroke-width="1.4" fill="#d4a866">
+        <line x1="92" y1="80" x2="200" y2="320"/>
+        <polygon points="200,320 192,316 196,308"/>
+        <line x1="92" y1="80" x2="350" y2="320"/>
+        <polygon points="350,320 342,318 345,310"/>
+        <line x1="92" y1="80" x2="500" y2="320"/>
+        <polygon points="500,320 492,319 494,311"/>
+      </g>
+      <text x="180" y="155" fill="#d4a866" font-size="11" font-weight="600">sunlight in (visible)</text>
+
+      <!-- Atmosphere band -->
+      <rect x="40" y="200" width="660" height="60" fill="#3d6280" opacity="0.25"/>
+      <line x1="40" y1="200" x2="700" y2="200" stroke="#9bbfde" stroke-width="0.8" stroke-dasharray="4 4"/>
+      <line x1="40" y1="260" x2="700" y2="260" stroke="#9bbfde" stroke-width="0.8" stroke-dasharray="4 4"/>
+      <text x="55" y="195" fill="#9bbfde" font-size="10" font-weight="600">atmosphere</text>
+
+      <!-- Greenhouse gas molecules (small circles labelled) -->
+      <g>
+        <circle cx="260" cy="230" r="14" fill="#8a5d9e" opacity="0.85" stroke="#1a1d22" stroke-width="0.8"/>
+        <text x="260" y="234" text-anchor="middle" fill="#e8e6e0" font-size="9" font-weight="700">CO₂</text>
+        <circle cx="430" cy="225" r="14" fill="#8a5d9e" opacity="0.85" stroke="#1a1d22" stroke-width="0.8"/>
+        <text x="430" y="229" text-anchor="middle" fill="#e8e6e0" font-size="9" font-weight="700">CH₄</text>
+        <circle cx="580" cy="232" r="14" fill="#8a5d9e" opacity="0.85" stroke="#1a1d22" stroke-width="0.8"/>
+        <text x="580" y="236" text-anchor="middle" fill="#e8e6e0" font-size="9" font-weight="700">CO₂</text>
+      </g>
+
+      <!-- Earth's surface -->
+      <rect x="20" y="320" width="680" height="40" fill="#6b4a3a"/>
+      <path d="M 20 320 Q 100 314 200 320 Q 300 326 400 318 Q 500 314 600 322 Q 670 326 700 320" fill="none" stroke="#a8a59c" stroke-width="0.8"/>
+      <text x="360" y="350" text-anchor="middle" fill="#e8e6e0" font-size="11" font-weight="600">Earth's surface</text>
+
+      <!-- IR rays from surface -->
+      <!-- Ray 1: escapes (straight up through gap) -->
+      <line x1="120" y1="318" x2="120" y2="180" stroke="#c97564" stroke-width="1.6"/>
+      <polygon points="120,180 116,188 124,188" fill="#c97564"/>
+      <text x="125" y="170" fill="#c97564" font-size="10" font-weight="600">some IR escapes</text>
+
+      <!-- Ray 2: surface up to CO2 molecule, then re-radiated back down -->
+      <line x1="280" y1="318" x2="270" y2="245" stroke="#c97564" stroke-width="1.6"/>
+      <line x1="252" y1="240" x2="220" y2="320" stroke="#c97564" stroke-width="1.6"/>
+      <polygon points="220,320 222,312 230,316" fill="#c97564"/>
+      <!-- Ray 3 -->
+      <line x1="450" y1="318" x2="440" y2="240" stroke="#c97564" stroke-width="1.6"/>
+      <line x1="422" y1="235" x2="380" y2="320" stroke="#c97564" stroke-width="1.6"/>
+      <polygon points="380,320 382,312 390,316" fill="#c97564"/>
+      <!-- Ray 4 -->
+      <line x1="600" y1="318" x2="592" y2="248" stroke="#c97564" stroke-width="1.6"/>
+      <line x1="572" y1="245" x2="540" y2="320" stroke="#c97564" stroke-width="1.6"/>
+      <polygon points="540,320 542,312 550,316" fill="#c97564"/>
+
+      <text x="500" y="195" fill="#c97564" font-size="11" font-weight="600">IR trapped + re-radiated → surface warms more</text>
+    </svg>
+    <figcaption>Sunlight passes straight through the atmosphere and warms the Earth's surface. The warm surface then re-radiates infrared (heat) upward — but greenhouse gas molecules (CO₂, CH₄) absorb some of that IR and re-radiate it in all directions, including back down. More greenhouse gases means more IR bouncing back, so the surface heats up further. That's the enhanced greenhouse effect.</figcaption>
+  </figure>
 
   <h2>8.7 Climate change</h2>
   <p>Long-term shifts in global weather patterns. Effects:</p>

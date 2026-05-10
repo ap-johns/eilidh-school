@@ -60,6 +60,44 @@
     <p>Pick two points on the line. Speed = (rise) ÷ (run) = (distance change) ÷ (time change).</p>
   </div>
 
+  <figure class="diagram" style="max-width: 600px;">
+    <svg viewBox="0 0 540 320" role="img" aria-label="Example distance-time graph showing constant speed, stationary, faster constant speed, and returning to start" font-family="Manrope, sans-serif">
+      <!-- Axes -->
+      <line x1="60" y1="40" x2="60" y2="260" stroke="#6e6c63" stroke-width="1.4"/>
+      <line x1="60" y1="260" x2="500" y2="260" stroke="#6e6c63" stroke-width="1.4"/>
+      <text x="60" y="28" text-anchor="middle" fill="#a8a59c" font-size="12">distance</text>
+      <text x="280" y="290" text-anchor="middle" fill="#a8a59c" font-size="12">time →</text>
+      <!-- Grid lines (light) -->
+      <g stroke="#3a3d44" stroke-width="0.6" stroke-dasharray="2 3">
+        <line x1="60" y1="200" x2="500" y2="200"/>
+        <line x1="60" y1="140" x2="500" y2="140"/>
+        <line x1="60" y1="80" x2="500" y2="80"/>
+        <line x1="160" y1="40" x2="160" y2="260"/>
+        <line x1="220" y1="40" x2="220" y2="260"/>
+        <line x1="320" y1="40" x2="320" y2="260"/>
+      </g>
+      <!-- Plot -->
+      <g stroke="#d4a866" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="60" y1="260" x2="160" y2="200"/>
+        <line x1="160" y1="200" x2="220" y2="200"/>
+        <line x1="220" y1="200" x2="320" y2="80"/>
+        <line x1="320" y1="80" x2="440" y2="240"/>
+      </g>
+      <!-- Annotations -->
+      <text x="110" y="225" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">constant</text>
+      <text x="110" y="240" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">speed</text>
+      <text x="190" y="190" text-anchor="middle" fill="#9bbfde" font-size="11" font-weight="600">stationary</text>
+      <text x="190" y="178" text-anchor="middle" fill="#a8a59c" font-size="9">(flat line)</text>
+      <text x="270" y="135" text-anchor="middle" fill="#c97564" font-size="11" font-weight="600">faster</text>
+      <text x="270" y="148" text-anchor="middle" fill="#a8a59c" font-size="9">(steeper)</text>
+      <text x="395" y="155" text-anchor="middle" fill="#e0a78c" font-size="11" font-weight="600">returning</text>
+      <text x="395" y="168" text-anchor="middle" fill="#a8a59c" font-size="9">(line goes down)</text>
+      <!-- Gradient = speed annotation -->
+      <text x="280" y="305" text-anchor="middle" fill="#a8a59c" font-size="11" font-style="italic">gradient = speed</text>
+    </svg>
+    <figcaption>Reading the line tells you what's happening. Steady upward slope = constant speed. Flatter line = nothing moving. Steeper line = going faster. Line going downwards = heading back toward the start. The gradient (rise ÷ run) is the speed.</figcaption>
+  </figure>
+
   <h2>9.3 Pressure in gases</h2>
   <ul>
     <li>Gas particles move randomly and collide with the walls of the container.</li>
@@ -90,6 +128,55 @@
     <li>Larger area + same force → smaller pressure (snowshoes, tractor tyres).</li>
   </ul>
 
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 340" role="img" aria-label="Same force on a small area gives high pressure (a nail pierces wood); spread over a large area, the same force gives low pressure (a snowshoe doesn't sink)" font-family="Manrope, sans-serif">
+      <!-- Panel 1: Small area, high pressure -->
+      <text x="180" y="30" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Small area → high pressure</text>
+      <!-- Force arrow above -->
+      <line x1="180" y1="60" x2="180" y2="105" stroke="#c97564" stroke-width="2.2"/>
+      <polygon points="180,105 174,98 186,98" fill="#c97564"/>
+      <text x="195" y="80" fill="#c97564" font-size="12" font-weight="700">F = 10 N</text>
+      <!-- Nail body -->
+      <rect x="170" y="105" width="20" height="115" fill="#a8a59c" stroke="#1a1d22" stroke-width="0.8"/>
+      <!-- Nail head -->
+      <rect x="155" y="100" width="50" height="8" fill="#a8a59c" stroke="#1a1d22" stroke-width="0.8"/>
+      <!-- Nail point -->
+      <polygon points="170,220 190,220 180,235" fill="#a8a59c" stroke="#1a1d22" stroke-width="0.8"/>
+      <!-- Surface -->
+      <rect x="40" y="235" width="280" height="55" fill="#6b4a3a"/>
+      <!-- Tiny contact area highlight -->
+      <ellipse cx="180" cy="237" rx="6" ry="2" fill="#c97564"/>
+      <line x1="180" y1="237" x2="180" y2="280" stroke="#c97564" stroke-width="1" stroke-dasharray="2 2"/>
+      <text x="180" y="310" text-anchor="middle" fill="#c97564" font-size="11" font-weight="600">tiny contact area</text>
+      <text x="180" y="325" text-anchor="middle" fill="#a8a59c" font-size="10">P = F ÷ A → very high</text>
+
+      <line x1="360" y1="20" x2="360" y2="330" stroke="#3a3d44" stroke-width="0.8" stroke-dasharray="3 4"/>
+
+      <!-- Panel 2: Large area, low pressure -->
+      <text x="540" y="30" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Large area → low pressure</text>
+      <!-- Force arrow -->
+      <line x1="540" y1="60" x2="540" y2="105" stroke="#a3c89a" stroke-width="2.2"/>
+      <polygon points="540,105 534,98 546,98" fill="#a3c89a"/>
+      <text x="555" y="80" fill="#a3c89a" font-size="12" font-weight="700">F = 10 N</text>
+      <!-- Block (snowshoe / wide base) -->
+      <rect x="430" y="105" width="220" height="40" fill="#d4a866" stroke="#1a1d22" stroke-width="0.8"/>
+      <text x="540" y="129" text-anchor="middle" fill="#1a1d22" font-size="11" font-weight="600">wide base</text>
+      <!-- Surface -->
+      <rect x="400" y="235" width="280" height="55" fill="#6b4a3a"/>
+      <!-- Wide contact area -->
+      <rect x="430" y="235" width="220" height="4" fill="#a3c89a"/>
+      <line x1="430" y1="239" x2="430" y2="280" stroke="#a3c89a" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="650" y1="239" x2="650" y2="280" stroke="#a3c89a" stroke-width="1" stroke-dasharray="2 2"/>
+      <text x="540" y="310" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">large contact area</text>
+      <text x="540" y="325" text-anchor="middle" fill="#a8a59c" font-size="10">P = F ÷ A → very low</text>
+
+      <!-- Connection between block and surface -->
+      <line x1="540" y1="145" x2="540" y2="235" stroke="#a8a59c" stroke-width="0.6" stroke-dasharray="2 3"/>
+      <line x1="180" y1="220" x2="180" y2="235" stroke="#a8a59c" stroke-width="0.6"/>
+    </svg>
+    <figcaption>Same force, different result. Press 10 newtons through the tip of a nail and the pressure underneath is enormous — the wood gives way. Spread the same 10 newtons across a snowshoe's wide base and the pressure is tiny — you stay on top of the snow. Pressure = force ÷ area, so squeezing the area makes the pressure shoot up.</figcaption>
+  </figure>
+
   <h2>9.6 Turning forces (moments)</h2>
   <p class="mono-block"><strong>moment = force × perpendicular distance from pivot</strong> (Nm)</p>
 
@@ -100,6 +187,66 @@
     <p>A 20N child sits 3m from the pivot. To balance, where must a 30N child sit on the other side?</p>
     <p class="mono-block">20 × 3 = 30 × d<br>60 = 30d<br>d = <strong>2m</strong></p>
   </div>
+
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 320" role="img" aria-label="Balanced see-saw with a 20 newton weight 3 metres from the pivot on the left and a 30 newton weight 2 metres from the pivot on the right" font-family="Manrope, sans-serif">
+      <!-- Plank -->
+      <rect x="60" y="172" width="600" height="14" fill="#d4a866" stroke="#1a1d22" stroke-width="1"/>
+      <!-- Pivot triangle -->
+      <polygon points="360,186 340,230 380,230" fill="#a8a59c" stroke="#1a1d22" stroke-width="1"/>
+      <text x="360" y="248" text-anchor="middle" fill="#a8a59c" font-size="10">pivot</text>
+      <!-- Ground -->
+      <line x1="60" y1="232" x2="660" y2="232" stroke="#a8a59c" stroke-width="1"/>
+      <g stroke="#a8a59c" stroke-width="0.6">
+        <line x1="80" y1="232" x2="72" y2="244"/>
+        <line x1="160" y1="232" x2="152" y2="244"/>
+        <line x1="240" y1="232" x2="232" y2="244"/>
+        <line x1="440" y1="232" x2="432" y2="244"/>
+        <line x1="520" y1="232" x2="512" y2="244"/>
+        <line x1="600" y1="232" x2="592" y2="244"/>
+      </g>
+
+      <!-- Left weight: 20N at 3m -->
+      <rect x="160" y="130" width="40" height="42" fill="#9bbfde" stroke="#1a1d22" stroke-width="1"/>
+      <text x="180" y="156" text-anchor="middle" fill="#1a1d22" font-size="13" font-weight="700">20 N</text>
+      <!-- Force arrow -->
+      <line x1="180" y1="80" x2="180" y2="125" stroke="#9bbfde" stroke-width="1.6"/>
+      <polygon points="180,125 175,118 185,118" fill="#9bbfde"/>
+      <text x="195" y="100" fill="#9bbfde" font-size="11" font-weight="600">20 N down</text>
+      <!-- Distance arrow 3m -->
+      <line x1="180" y1="270" x2="360" y2="270" stroke="#a8a59c" stroke-width="1"/>
+      <polygon points="180,270 188,266 188,274" fill="#a8a59c"/>
+      <polygon points="360,270 352,266 352,274" fill="#a8a59c"/>
+      <text x="270" y="265" text-anchor="middle" fill="#a8a59c" font-size="11" font-weight="600">3 m</text>
+
+      <!-- Right weight: 30N at 2m -->
+      <rect x="520" y="130" width="40" height="42" fill="#c97564" stroke="#1a1d22" stroke-width="1"/>
+      <text x="540" y="156" text-anchor="middle" fill="#1a1d22" font-size="13" font-weight="700">30 N</text>
+      <!-- Force arrow -->
+      <line x1="540" y1="80" x2="540" y2="125" stroke="#c97564" stroke-width="1.6"/>
+      <polygon points="540,125 535,118 545,118" fill="#c97564"/>
+      <text x="555" y="100" fill="#c97564" font-size="11" font-weight="600">30 N down</text>
+      <!-- Distance arrow 2m -->
+      <line x1="360" y1="270" x2="540" y2="270" stroke="#a8a59c" stroke-width="1"/>
+      <polygon points="360,270 368,266 368,274" fill="#a8a59c"/>
+      <polygon points="540,270 532,266 532,274" fill="#a8a59c"/>
+      <text x="450" y="265" text-anchor="middle" fill="#a8a59c" font-size="11" font-weight="600">2 m</text>
+
+      <!-- Turning indicators (curved arrows around pivot) -->
+      <path d="M 290 196 A 50 50 0 0 0 320 220" fill="none" stroke="#9bbfde" stroke-width="1.4"/>
+      <polygon points="320,220 312,221 316,228" fill="#9bbfde"/>
+      <text x="270" y="215" text-anchor="end" fill="#9bbfde" font-size="10">anticlockwise</text>
+      <path d="M 430 196 A 50 50 0 0 1 400 220" fill="none" stroke="#c97564" stroke-width="1.4"/>
+      <polygon points="400,220 408,221 404,228" fill="#c97564"/>
+      <text x="450" y="215" fill="#c97564" font-size="10">clockwise</text>
+
+      <!-- Calculation text -->
+      <text x="170" y="305" fill="#9bbfde" font-size="12" font-weight="600">20 × 3 = 60 Nm</text>
+      <text x="425" y="305" fill="#c97564" font-size="12" font-weight="600">30 × 2 = 60 Nm</text>
+      <text x="360" y="305" text-anchor="middle" fill="#a3c89a" font-size="13" font-weight="700">=</text>
+    </svg>
+    <figcaption>For a balanced see-saw, the turning effect of one side must equal the turning effect of the other. Each side's <strong>moment</strong> is force × distance from the pivot. The lighter child sits further out; the heavier child closer. Both sides multiply to 60 Nm here, so the see-saw stays level.</figcaption>
+  </figure>
 
   <div class="quick-ref">
     <h3>Quick reference</h3>
