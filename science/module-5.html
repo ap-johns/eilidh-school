@@ -65,6 +65,83 @@
 
   <p>Hydrogen is included as a reference: metals above hydrogen react with acids; metals below it (Cu, Ag, Au) generally don't.</p>
 
+  <figure class="diagram" style="max-width: 660px;">
+    <svg viewBox="0 0 600 440" role="img" aria-label="Reactivity series listed from most to least reactive, with carbon and hydrogen reference lines and the extraction method for each band" font-family="Manrope, sans-serif">
+      <!-- Vertical reactivity arrow on left -->
+      <line x1="60" y1="60" x2="60" y2="370" stroke="#d4a866" stroke-width="1.6"/>
+      <polygon points="60,60 56,68 64,68" fill="#d4a866"/>
+      <text x="40" y="50" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">more</text>
+      <text x="40" y="64" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">reactive</text>
+      <text x="40" y="385" text-anchor="middle" fill="#a8a59c" font-size="11">less</text>
+      <text x="40" y="399" text-anchor="middle" fill="#a8a59c" font-size="11">reactive</text>
+
+      <!-- Metal boxes -->
+      <g>
+        <rect x="180" y="55" width="180" height="22" rx="3" fill="#3a241e" stroke="#e0a78c" stroke-width="1"/>
+        <text x="270" y="71" text-anchor="middle" fill="#e0a78c" font-size="12" font-weight="600">Potassium · K</text>
+        <rect x="180" y="83" width="180" height="22" rx="3" fill="#3a241e" stroke="#e0a78c" stroke-width="1"/>
+        <text x="270" y="99" text-anchor="middle" fill="#e0a78c" font-size="12" font-weight="600">Sodium · Na</text>
+        <rect x="180" y="111" width="180" height="22" rx="3" fill="#3a241e" stroke="#e0a78c" stroke-width="1"/>
+        <text x="270" y="127" text-anchor="middle" fill="#e0a78c" font-size="12" font-weight="600">Calcium · Ca</text>
+        <rect x="180" y="139" width="180" height="22" rx="3" fill="#3a241e" stroke="#e0a78c" stroke-width="1"/>
+        <text x="270" y="155" text-anchor="middle" fill="#e0a78c" font-size="12" font-weight="600">Magnesium · Mg</text>
+        <rect x="180" y="167" width="180" height="22" rx="3" fill="#3a241e" stroke="#e0a78c" stroke-width="1"/>
+        <text x="270" y="183" text-anchor="middle" fill="#e0a78c" font-size="12" font-weight="600">Aluminium · Al</text>
+      </g>
+      <!-- Carbon reference line -->
+      <line x1="120" y1="200" x2="420" y2="200" stroke="#a8a59c" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <text x="270" y="195" text-anchor="middle" fill="#a8a59c" font-size="10" font-style="italic">— carbon (C) reference —</text>
+      <g>
+        <rect x="180" y="207" width="180" height="22" rx="3" fill="#2d3038" stroke="#d4a866" stroke-width="1"/>
+        <text x="270" y="223" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="600">Zinc · Zn</text>
+        <rect x="180" y="235" width="180" height="22" rx="3" fill="#2d3038" stroke="#d4a866" stroke-width="1"/>
+        <text x="270" y="251" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="600">Iron · Fe</text>
+      </g>
+      <!-- Hydrogen reference line -->
+      <line x1="120" y1="266" x2="420" y2="266" stroke="#a8a59c" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <text x="270" y="261" text-anchor="middle" fill="#a8a59c" font-size="10" font-style="italic">— hydrogen (H) reference —</text>
+      <g>
+        <rect x="180" y="273" width="180" height="22" rx="3" fill="#2d3038" stroke="#d4a866" stroke-width="1"/>
+        <text x="270" y="289" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="600">Copper · Cu</text>
+        <rect x="180" y="301" width="180" height="22" rx="3" fill="#2d3038" stroke="#d4a866" stroke-width="1"/>
+        <text x="270" y="317" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="600">Silver · Ag</text>
+        <rect x="180" y="329" width="180" height="22" rx="3" fill="#3a3220" stroke="#d4a866" stroke-width="1.6"/>
+        <text x="270" y="345" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="700">Gold · Au</text>
+      </g>
+
+      <!-- Right-side annotations: extraction method -->
+      <g stroke="#e0a78c" stroke-width="1" fill="none">
+        <line x1="365" y1="55" x2="375" y2="55"/>
+        <line x1="375" y1="55" x2="375" y2="189"/>
+        <line x1="365" y1="189" x2="375" y2="189"/>
+      </g>
+      <text x="385" y="113" fill="#e0a78c" font-size="11" font-weight="600">Need electrolysis</text>
+      <text x="385" y="128" fill="#a8a59c" font-size="9">(too reactive for carbon)</text>
+
+      <g stroke="#d4a866" stroke-width="1" fill="none">
+        <line x1="365" y1="207" x2="375" y2="207"/>
+        <line x1="375" y1="207" x2="375" y2="323"/>
+        <line x1="365" y1="323" x2="375" y2="323"/>
+      </g>
+      <text x="385" y="260" fill="#d4a866" font-size="11" font-weight="600">Heat with carbon</text>
+      <text x="385" y="275" fill="#a8a59c" font-size="9">carbon takes the oxygen</text>
+
+      <text x="385" y="345" fill="#d4a866" font-size="11" font-weight="600">Found native</text>
+      <text x="385" y="358" fill="#a8a59c" font-size="9">unreactive — already pure</text>
+
+      <!-- Acid reactivity bracket (left side) -->
+      <text x="115" y="143" text-anchor="end" fill="#a3c89a" font-size="10" font-weight="600">react with</text>
+      <text x="115" y="156" text-anchor="end" fill="#a3c89a" font-size="10" font-weight="600">acids → H₂</text>
+      <text x="115" y="305" text-anchor="end" fill="#c97564" font-size="10" font-weight="600">don't react</text>
+      <text x="115" y="318" text-anchor="end" fill="#c97564" font-size="10" font-weight="600">with acids</text>
+
+      <!-- Memory hook -->
+      <text x="300" y="405" text-anchor="middle" fill="#a8a59c" font-size="10" font-style="italic">"Please Stop Calling My Aunty Zara, Iron Has Cooked Some Goose"</text>
+      <text x="300" y="425" text-anchor="middle" fill="#a8a59c" font-size="9">K · Na · Ca · Mg · Al · Zn · Fe · (H) · Cu · Ag · Au</text>
+    </svg>
+    <figcaption>Two reference points to remember. <strong>Carbon</strong> tells you how to extract a metal — anything <em>above</em> carbon is too reactive for carbon to grab the oxygen, so you need electrolysis. Anything <em>below</em> can be extracted by heating with carbon. <strong>Hydrogen</strong> tells you whether a metal reacts with dilute acids — yes if above it, no if below.</figcaption>
+  </figure>
+
   <h2>5.4 Metal displacement reactions</h2>
   <p>A more reactive metal will <strong>displace</strong> a less reactive metal from a salt solution.</p>
 
@@ -75,6 +152,56 @@
     <p>The blue solution fades and a brown copper coating appears on the iron.</p>
   </div>
 
+  <figure class="diagram" style="max-width: 720px;">
+    <svg viewBox="0 0 660 340" role="img" aria-label="Iron in copper-sulfate solution: before, blue solution with bare iron nail; after, faded solution with copper-coated nail" font-family="Manrope, sans-serif">
+      <text x="160" y="30" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Before</text>
+      <!-- Beaker 1 -->
+      <g stroke="#a8a59c" stroke-width="1.4" fill="none">
+        <line x1="50" y1="60" x2="50" y2="240"/>
+        <line x1="270" y1="60" x2="270" y2="240"/>
+        <line x1="50" y1="240" x2="270" y2="240"/>
+        <line x1="40" y1="60" x2="60" y2="60"/>
+        <line x1="260" y1="60" x2="280" y2="60"/>
+      </g>
+      <rect x="51" y="100" width="218" height="139" fill="#3d6280" opacity="0.85"/>
+      <line x1="51" y1="100" x2="269" y2="100" stroke="#9bbfde" stroke-width="0.8"/>
+      <!-- Iron nail (bare) -->
+      <rect x="148" y="125" width="24" height="105" fill="#a8a59c" stroke="#1a1d22" stroke-width="0.8"/>
+      <polygon points="148,125 172,125 160,108" fill="#a8a59c" stroke="#1a1d22" stroke-width="0.8"/>
+      <text x="160" y="270" text-anchor="middle" fill="#9bbfde" font-size="11" font-weight="600">blue CuSO₄ solution</text>
+      <text x="160" y="285" text-anchor="middle" fill="#a8a59c" font-size="10">+ bare iron nail</text>
+
+      <!-- Arrow + equation -->
+      <line x1="295" y1="160" x2="365" y2="160" stroke="#a8a59c" stroke-width="1.6"/>
+      <polygon points="365,160 357,156 357,164" fill="#a8a59c"/>
+      <text x="330" y="148" text-anchor="middle" fill="#d4a866" font-size="10" font-weight="600">Fe more reactive</text>
+      <text x="330" y="178" text-anchor="middle" fill="#d4a866" font-size="10" font-weight="600">than Cu</text>
+
+      <text x="500" y="30" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">After</text>
+      <!-- Beaker 2 -->
+      <g stroke="#a8a59c" stroke-width="1.4" fill="none">
+        <line x1="390" y1="60" x2="390" y2="240"/>
+        <line x1="610" y1="60" x2="610" y2="240"/>
+        <line x1="390" y1="240" x2="610" y2="240"/>
+        <line x1="380" y1="60" x2="400" y2="60"/>
+        <line x1="600" y1="60" x2="620" y2="60"/>
+      </g>
+      <rect x="391" y="100" width="218" height="139" fill="#6b8a7a" opacity="0.55"/>
+      <line x1="391" y1="100" x2="609" y2="100" stroke="#a3c89a" stroke-width="0.8"/>
+      <!-- Iron nail with copper coating -->
+      <rect x="484" y="125" width="32" height="105" fill="#b25a3e" stroke="#1a1d22" stroke-width="0.8"/>
+      <polygon points="484,125 516,125 500,105" fill="#b25a3e" stroke="#1a1d22" stroke-width="0.8"/>
+      <rect x="488" y="129" width="24" height="98" fill="#a8a59c" stroke="none"/>
+      <polygon points="488,129 512,129 500,113" fill="#a8a59c"/>
+      <text x="500" y="270" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">FeSO₄ (paler) + Cu coating</text>
+      <text x="500" y="285" text-anchor="middle" fill="#a8a59c" font-size="10">brown copper plates onto the iron</text>
+
+      <!-- Equation -->
+      <text x="330" y="320" text-anchor="middle" fill="#e8e6e0" font-size="14" font-weight="600">Fe + CuSO₄ → FeSO₄ + Cu</text>
+    </svg>
+    <figcaption>Iron is more reactive than copper, so iron <em>displaces</em> copper from the copper-sulfate solution. Iron atoms swap places with copper ions: iron goes into solution as iron sulfate (the blue colour fades), and copper deposits as a brown coating on the nail.</figcaption>
+  </figure>
+
   <h2>5.5 Extracting metals</h2>
   <ul>
     <li>Most metals are found in the Earth as <strong>ores</strong> (compounds with oxygen or sulfur, etc.).</li>
@@ -83,6 +210,51 @@
     <li>Metals <strong>more reactive than carbon</strong> (Al, Mg, Na) need <strong>electrolysis</strong> — passing electricity through a molten compound. More expensive.</li>
     <li>Gold can be found as the metal itself ("native gold") because it's so unreactive.</li>
   </ul>
+
+  <figure class="diagram" style="max-width: 660px;">
+    <svg viewBox="0 0 600 380" role="img" aria-label="Flowchart for extracting metals: starting from a metal ore, the choice of method depends on where the metal sits on the reactivity series" font-family="Manrope, sans-serif">
+      <!-- Start: Metal ore -->
+      <rect x="240" y="20" width="120" height="40" rx="6" fill="#2d3038" stroke="#a8a59c" stroke-width="1.4"/>
+      <text x="300" y="44" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Metal ore</text>
+      <!-- Arrow -->
+      <line x1="300" y1="60" x2="300" y2="100" stroke="#a8a59c" stroke-width="1.4"/>
+      <polygon points="300,100 296,92 304,92" fill="#a8a59c"/>
+      <!-- Decision -->
+      <polygon points="300,108 460,168 300,228 140,168" fill="#1f2127" stroke="#d4a866" stroke-width="1.4"/>
+      <text x="300" y="160" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="600">Where on the</text>
+      <text x="300" y="176" text-anchor="middle" fill="#d4a866" font-size="12" font-weight="600">reactivity series?</text>
+      <!-- Three branches -->
+      <line x1="180" y1="200" x2="100" y2="260" stroke="#a8a59c" stroke-width="1.4"/>
+      <polygon points="100,260 104,252 108,260" fill="#a8a59c"/>
+      <line x1="300" y1="228" x2="300" y2="260" stroke="#a8a59c" stroke-width="1.4"/>
+      <polygon points="300,260 296,252 304,252" fill="#a8a59c"/>
+      <line x1="420" y1="200" x2="500" y2="260" stroke="#a8a59c" stroke-width="1.4"/>
+      <polygon points="500,260 492,260 496,252" fill="#a8a59c"/>
+      <!-- Left: above carbon -->
+      <text x="100" y="220" text-anchor="middle" fill="#e0a78c" font-size="10">above C</text>
+      <text x="100" y="234" text-anchor="middle" fill="#a8a59c" font-size="9">(K, Na, Ca, Mg, Al)</text>
+      <rect x="20" y="265" width="160" height="80" rx="6" fill="#3a241e" stroke="#e0a78c" stroke-width="1.4"/>
+      <text x="100" y="290" text-anchor="middle" fill="#e0a78c" font-size="13" font-weight="700">Electrolysis</text>
+      <text x="100" y="308" text-anchor="middle" fill="#a8a59c" font-size="10">pass electricity</text>
+      <text x="100" y="322" text-anchor="middle" fill="#a8a59c" font-size="10">through molten ore</text>
+      <text x="100" y="338" text-anchor="middle" fill="#c97564" font-size="10" font-style="italic">expensive</text>
+      <!-- Middle: below carbon, above gold -->
+      <text x="300" y="248" text-anchor="middle" fill="#d4a866" font-size="10">below C, above Au</text>
+      <rect x="220" y="265" width="160" height="80" rx="6" fill="#2d3038" stroke="#d4a866" stroke-width="1.4"/>
+      <text x="300" y="290" text-anchor="middle" fill="#d4a866" font-size="13" font-weight="700">Heat with carbon</text>
+      <text x="300" y="308" text-anchor="middle" fill="#a8a59c" font-size="10">carbon grabs the oxygen</text>
+      <text x="300" y="322" text-anchor="middle" fill="#a8a59c" font-size="10">→ pure metal + CO₂</text>
+      <text x="300" y="338" text-anchor="middle" fill="#a3c89a" font-size="10" font-style="italic">Zn · Fe · Cu</text>
+      <!-- Right: native -->
+      <text x="500" y="248" text-anchor="middle" fill="#a3c89a" font-size="10">very unreactive</text>
+      <rect x="420" y="265" width="160" height="80" rx="6" fill="#3a3220" stroke="#d4a866" stroke-width="1.6"/>
+      <text x="500" y="290" text-anchor="middle" fill="#d4a866" font-size="13" font-weight="700">Found native</text>
+      <text x="500" y="308" text-anchor="middle" fill="#a8a59c" font-size="10">already pure in the ground</text>
+      <text x="500" y="322" text-anchor="middle" fill="#a8a59c" font-size="10">just collect it</text>
+      <text x="500" y="338" text-anchor="middle" fill="#a3c89a" font-size="10" font-style="italic">Au (gold)</text>
+    </svg>
+    <figcaption>Where a metal sits on the reactivity series decides how you get it out of its ore. The more reactive it is, the harder it is to break the bond with oxygen — so the most reactive metals need electricity (electrolysis) to do it. Less reactive metals let carbon do the work for them. The least reactive (gold) didn't bond in the first place.</figcaption>
+  </figure>
 
   <h2>5.6 Ceramics</h2>
   <ul>
@@ -104,6 +276,73 @@
     <li>Examples: <strong>concrete</strong> (cement + sand + gravel), <strong>fibreglass</strong> (plastic + glass fibres), <strong>carbon-fibre</strong> (plastic + carbon fibres).</li>
     <li>Often light AND strong — used in bicycle frames, aircraft, sports gear.</li>
   </ul>
+
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 300" role="img" aria-label="Structure of three material types — ceramic rigid lattice, polymer long chains, and composite matrix plus reinforcement" font-family="Manrope, sans-serif">
+      <!-- Panel 1: Ceramic -->
+      <text x="120" y="32" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Ceramic</text>
+      <rect x="20" y="48" width="200" height="170" rx="6" fill="#1f2127" stroke="#6e6c63" stroke-width="1"/>
+      <!-- 4x4 lattice of atoms with rigid bonds -->
+      <g stroke="#a8a59c" stroke-width="1.2" fill="none">
+        <line x1="50" y1="80" x2="190" y2="80"/>
+        <line x1="50" y1="120" x2="190" y2="120"/>
+        <line x1="50" y1="160" x2="190" y2="160"/>
+        <line x1="50" y1="200" x2="190" y2="200"/>
+        <line x1="50" y1="80" x2="50" y2="200"/>
+        <line x1="95" y1="80" x2="95" y2="200"/>
+        <line x1="140" y1="80" x2="140" y2="200"/>
+        <line x1="190" y1="80" x2="190" y2="200"/>
+      </g>
+      <g fill="#9bbfde" stroke="#1a1d22" stroke-width="0.8">
+        <circle cx="50" cy="80" r="7"/><circle cx="95" cy="80" r="7"/><circle cx="140" cy="80" r="7"/><circle cx="190" cy="80" r="7"/>
+        <circle cx="50" cy="120" r="7"/><circle cx="95" cy="120" r="7"/><circle cx="140" cy="120" r="7"/><circle cx="190" cy="120" r="7"/>
+        <circle cx="50" cy="160" r="7"/><circle cx="95" cy="160" r="7"/><circle cx="140" cy="160" r="7"/><circle cx="190" cy="160" r="7"/>
+        <circle cx="50" cy="200" r="7"/><circle cx="95" cy="200" r="7"/><circle cx="140" cy="200" r="7"/><circle cx="190" cy="200" r="7"/>
+      </g>
+      <text x="120" y="245" text-anchor="middle" fill="#9bbfde" font-size="11" font-weight="600">rigid 3D lattice</text>
+      <text x="120" y="260" text-anchor="middle" fill="#a8a59c" font-size="10">hard, brittle, insulating</text>
+      <text x="120" y="278" text-anchor="middle" fill="#a8a59c" font-size="9">pottery · glass · brick</text>
+
+      <!-- Panel 2: Polymer -->
+      <text x="360" y="32" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Polymer</text>
+      <rect x="260" y="48" width="200" height="170" rx="6" fill="#1f2127" stroke="#6e6c63" stroke-width="1"/>
+      <!-- Long zigzag chains -->
+      <g stroke="#d4a866" stroke-width="1.6" fill="none" stroke-linecap="round">
+        <polyline points="270,80 285,72 300,80 315,72 330,80 345,72 360,80 375,72 390,80 405,72 420,80 435,72 450,80"/>
+        <polyline points="270,130 285,122 300,130 315,122 330,130 345,122 360,130 375,122 390,130 405,122 420,130 435,122 450,130"/>
+        <polyline points="270,180 285,172 300,180 315,172 330,180 345,172 360,180 375,172 390,180 405,172 420,180 435,172 450,180"/>
+      </g>
+      <g fill="#d4a866">
+        <circle cx="270" cy="80" r="3"/><circle cx="300" cy="80" r="3"/><circle cx="330" cy="80" r="3"/><circle cx="360" cy="80" r="3"/><circle cx="390" cy="80" r="3"/><circle cx="420" cy="80" r="3"/><circle cx="450" cy="80" r="3"/>
+        <circle cx="270" cy="130" r="3"/><circle cx="300" cy="130" r="3"/><circle cx="330" cy="130" r="3"/><circle cx="360" cy="130" r="3"/><circle cx="390" cy="130" r="3"/><circle cx="420" cy="130" r="3"/><circle cx="450" cy="130" r="3"/>
+        <circle cx="270" cy="180" r="3"/><circle cx="300" cy="180" r="3"/><circle cx="330" cy="180" r="3"/><circle cx="360" cy="180" r="3"/><circle cx="390" cy="180" r="3"/><circle cx="420" cy="180" r="3"/><circle cx="450" cy="180" r="3"/>
+      </g>
+      <text x="360" y="245" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">long chains of monomers</text>
+      <text x="360" y="260" text-anchor="middle" fill="#a8a59c" font-size="10">flexible, light, insulating</text>
+      <text x="360" y="278" text-anchor="middle" fill="#a8a59c" font-size="9">polythene · PVC · nylon</text>
+
+      <!-- Panel 3: Composite -->
+      <text x="600" y="32" text-anchor="middle" fill="#e8e6e0" font-size="13" font-weight="600">Composite</text>
+      <rect x="500" y="48" width="200" height="170" rx="6" fill="#1f2127" stroke="#6e6c63" stroke-width="1"/>
+      <!-- Polymer matrix (light chains in background) -->
+      <g stroke="#d4a866" stroke-width="1" fill="none" opacity="0.5">
+        <polyline points="510,75 525,68 540,75 555,68 570,75 585,68 600,75 615,68 630,75 645,68 660,75 675,68 690,75"/>
+        <polyline points="510,110 525,103 540,110 555,103 570,110 585,103 600,110 615,103 630,110 645,103 660,110 675,103 690,110"/>
+        <polyline points="510,145 525,138 540,145 555,138 570,145 585,138 600,145 615,138 630,145 645,138 660,145 675,138 690,145"/>
+        <polyline points="510,195 525,188 540,195 555,188 570,195 585,188 600,195 615,188 630,195 645,188 660,195 675,188 690,195"/>
+      </g>
+      <!-- Reinforcement: thicker carbon/glass fibers -->
+      <g stroke="#a3c89a" stroke-width="3" fill="none" stroke-linecap="round">
+        <line x1="510" y1="92" x2="690" y2="88"/>
+        <line x1="510" y1="128" x2="690" y2="125"/>
+        <line x1="510" y1="170" x2="690" y2="172"/>
+      </g>
+      <text x="600" y="245" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">matrix + reinforcement</text>
+      <text x="600" y="260" text-anchor="middle" fill="#a8a59c" font-size="10">light AND strong</text>
+      <text x="600" y="278" text-anchor="middle" fill="#a8a59c" font-size="9">concrete · fibreglass · carbon-fibre</text>
+    </svg>
+    <figcaption>The structure inside the material is what gives it its properties. A ceramic's rigid 3D lattice can't move, so it's hard but snaps under stress. A polymer's long chains can slide and bend, so it's flexible. A composite glues fibres of one material into the matrix of another so the whole thing has the strength of the fibres <em>and</em> the lightness of the matrix.</figcaption>
+  </figure>
 
   <div class="quick-ref">
     <h3>Quick reference</h3>
