@@ -49,6 +49,44 @@
   <h2>1.1 Nutrients</h2>
   <p>A balanced diet contains seven nutrients in the right proportions:</p>
 
+  <figure class="diagram" style="max-width: 640px;">
+    <svg viewBox="0 0 540 380" role="img" aria-label="Eatwell-style balanced-diet plate showing five food group proportions" font-family="Manrope, sans-serif">
+      <!-- Plate outer ring -->
+      <circle cx="180" cy="180" r="135" fill="none" stroke="#6e6c63" stroke-width="1.4"/>
+      <!-- Segments (clockwise from top) -->
+      <path d="M 180 180 L 180 50 A 130 130 0 0 1 256.4 285.2 Z" fill="#a3c89a" stroke="#1a1d22" stroke-width="1.2"/>
+      <path d="M 180 180 L 256.4 285.2 A 130 130 0 0 1 50 180 Z" fill="#d4a866" stroke="#1a1d22" stroke-width="1.2"/>
+      <path d="M 180 180 L 50 180 A 130 130 0 0 1 85.2 91 Z" fill="#c97564" stroke="#1a1d22" stroke-width="1.2"/>
+      <path d="M 180 180 L 85.2 91 A 130 130 0 0 1 139.8 56.4 Z" fill="#9bbfde" stroke="#1a1d22" stroke-width="1.2"/>
+      <path d="M 180 180 L 139.8 56.4 A 130 130 0 0 1 180 50 Z" fill="#e0a78c" stroke="#1a1d22" stroke-width="1.2"/>
+      <!-- Labels inside big segments -->
+      <text x="240" y="155" text-anchor="middle" fill="#1a1d22" font-size="13" font-weight="700">Fruit &amp; veg</text>
+      <text x="240" y="170" text-anchor="middle" fill="#1a1d22" font-size="10">~⅓ of plate</text>
+      <text x="155" y="245" text-anchor="middle" fill="#1a1d22" font-size="13" font-weight="700">Starchy carbs</text>
+      <text x="155" y="260" text-anchor="middle" fill="#1a1d22" font-size="10">~⅓ of plate</text>
+      <text x="105" y="155" text-anchor="middle" fill="#1a1d22" font-size="12" font-weight="700">Protein</text>
+      <!-- Leader lines for small segments -->
+      <line x1="138" y1="113" x2="345" y2="100" stroke="#9bbfde" stroke-width="0.8"/>
+      <text x="350" y="98" fill="#9bbfde" font-size="12" font-weight="600">Dairy</text>
+      <text x="350" y="113" fill="#a8a59c" font-size="10">calcium for bones</text>
+      <line x1="165" y1="55" x2="345" y2="48" stroke="#e0a78c" stroke-width="0.8"/>
+      <text x="350" y="46" fill="#e0a78c" font-size="12" font-weight="600">Oils &amp; spreads</text>
+      <text x="350" y="61" fill="#a8a59c" font-size="10">small amount; energy store</text>
+      <!-- Notes -->
+      <text x="350" y="155" fill="#a3c89a" font-size="12" font-weight="600">Vitamins · minerals</text>
+      <text x="350" y="170" fill="#a8a59c" font-size="10">from fruit, veg, dairy</text>
+      <text x="350" y="200" fill="#a3c89a" font-size="12" font-weight="600">Fibre</text>
+      <text x="350" y="215" fill="#a8a59c" font-size="10">wholegrains, fruit &amp; veg</text>
+      <!-- Water glass -->
+      <path d="M 360 250 L 366 320 L 410 320 L 416 250 Z" fill="none" stroke="#9bbfde" stroke-width="1.4"/>
+      <path d="M 365 270 L 411 270 L 408 318 L 368 318 Z" fill="#3d6280" opacity="0.7"/>
+      <text x="430" y="270" fill="#9bbfde" font-size="12" font-weight="600">Water</text>
+      <text x="430" y="285" fill="#a8a59c" font-size="10">used in every chemical</text>
+      <text x="430" y="298" fill="#a8a59c" font-size="10">reaction in the body</text>
+    </svg>
+    <figcaption>Roughly the right proportions for a balanced meal: about a third fruit and veg, a third starchy carbs, a smaller protein portion, a bit of dairy, only a small amount of oils and fats. Vitamins, minerals and fibre come from the foods in those segments — and you need water on top of all of it.</figcaption>
+  </figure>
+
   <table>
     <thead><tr><th>Nutrient</th><th>Function</th><th>Example sources</th></tr></thead>
     <tbody>
@@ -79,6 +117,69 @@
     <p>"Iodine for starch, Benedict's for sugar, Biuret for protein." The vowels match the test.</p>
   </div>
 
+  <figure class="diagram" style="max-width: 760px;">
+    <svg viewBox="0 0 720 280" role="img" aria-label="Four food tests showing before and after colour changes for starch, sugar, protein and fat" font-family="Manrope, sans-serif">
+      <!-- Panel 1: Iodine + starch -->
+      <text x="95" y="30" text-anchor="middle" fill="#e8e6e0" font-size="12" font-weight="600">Starch</text>
+      <text x="95" y="46" text-anchor="middle" fill="#a8a59c" font-size="10">iodine solution</text>
+      <!-- Tube 1 (before) -->
+      <path d="M 32 60 L 32 127 A 13 13 0 0 0 58 127 L 58 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 32 90 L 32 127 A 13 13 0 0 0 58 127 L 58 90 Z" fill="#b67a4a"/>
+      <!-- Arrow -->
+      <line x1="68" y1="105" x2="92" y2="105" stroke="#a8a59c" stroke-width="1.2"/>
+      <polygon points="92,105 86,102 86,108" fill="#a8a59c"/>
+      <!-- Tube 2 (after) -->
+      <path d="M 107 60 L 107 127 A 13 13 0 0 0 133 127 L 133 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 107 90 L 107 127 A 13 13 0 0 0 133 127 L 133 90 Z" fill="#1f2a44"/>
+      <text x="95" y="170" text-anchor="middle" fill="#a8a59c" font-size="11">orange-brown → blue-black</text>
+      <text x="95" y="190" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">positive = starch</text>
+
+      <!-- Panel 2: Benedict's + sugar -->
+      <text x="265" y="30" text-anchor="middle" fill="#e8e6e0" font-size="12" font-weight="600">Reducing sugar</text>
+      <text x="265" y="46" text-anchor="middle" fill="#a8a59c" font-size="10">Benedict's + heat</text>
+      <path d="M 202 60 L 202 127 A 13 13 0 0 0 228 127 L 228 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 202 90 L 202 127 A 13 13 0 0 0 228 127 L 228 90 Z" fill="#4a6580"/>
+      <line x1="238" y1="105" x2="262" y2="105" stroke="#a8a59c" stroke-width="1.2"/>
+      <polygon points="262,105 256,102 256,108" fill="#a8a59c"/>
+      <path d="M 277 60 L 277 127 A 13 13 0 0 0 303 127 L 303 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 277 90 L 277 127 A 13 13 0 0 0 303 127 L 303 90 Z" fill="#b25a3e"/>
+      <!-- Heat flame under tube 1 -->
+      <path d="M 215 145 q -4 -8 0 -16 q 4 8 0 16 Z" fill="#d4a866"/>
+      <path d="M 215 143 q -2 -5 0 -10 q 2 5 0 10 Z" fill="#9bbfde"/>
+      <text x="232" y="148" fill="#a8a59c" font-size="10">heat</text>
+      <text x="265" y="170" text-anchor="middle" fill="#a8a59c" font-size="11">blue → brick-red</text>
+      <text x="265" y="190" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">positive = sugar</text>
+
+      <!-- Panel 3: Biuret + protein -->
+      <text x="445" y="30" text-anchor="middle" fill="#e8e6e0" font-size="12" font-weight="600">Protein</text>
+      <text x="445" y="46" text-anchor="middle" fill="#a8a59c" font-size="10">Biuret reagent</text>
+      <path d="M 382 60 L 382 127 A 13 13 0 0 0 408 127 L 408 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 382 90 L 382 127 A 13 13 0 0 0 408 127 L 408 90 Z" fill="#4a6580"/>
+      <line x1="418" y1="105" x2="442" y2="105" stroke="#a8a59c" stroke-width="1.2"/>
+      <polygon points="442,105 436,102 436,108" fill="#a8a59c"/>
+      <path d="M 457 60 L 457 127 A 13 13 0 0 0 483 127 L 483 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 457 90 L 457 127 A 13 13 0 0 0 483 127 L 483 90 Z" fill="#8a5d9e"/>
+      <text x="445" y="170" text-anchor="middle" fill="#a8a59c" font-size="11">blue → purple/lilac</text>
+      <text x="445" y="190" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">positive = protein</text>
+
+      <!-- Panel 4: Ethanol + fat -->
+      <text x="625" y="30" text-anchor="middle" fill="#e8e6e0" font-size="12" font-weight="600">Fat (lipid)</text>
+      <text x="625" y="46" text-anchor="middle" fill="#a8a59c" font-size="10">ethanol then water</text>
+      <path d="M 562 60 L 562 127 A 13 13 0 0 0 588 127 L 588 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 562 90 L 562 127 A 13 13 0 0 0 588 127 L 588 90 Z" fill="#3d6280" opacity="0.25"/>
+      <line x1="598" y1="105" x2="622" y2="105" stroke="#a8a59c" stroke-width="1.2"/>
+      <polygon points="622,105 616,102 616,108" fill="#a8a59c"/>
+      <path d="M 637 60 L 637 127 A 13 13 0 0 0 663 127 L 663 60" fill="none" stroke="#a8a59c" stroke-width="1.2"/>
+      <path d="M 637 90 L 637 127 A 13 13 0 0 0 663 127 L 663 90 Z" fill="#d8d2c0"/>
+      <text x="625" y="170" text-anchor="middle" fill="#a8a59c" font-size="11">clear → cloudy white</text>
+      <text x="625" y="190" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">positive = fat</text>
+
+      <!-- Footer note -->
+      <text x="360" y="240" text-anchor="middle" fill="#a8a59c" font-size="10">Each test changes colour only when the matching nutrient is present.</text>
+    </svg>
+    <figcaption>Add the reagent (Benedict's needs heat too); the colour change tells you which nutrient is present. Remember: iodine → starch, Benedict's → sugar, Biuret → protein, ethanol → fat.</figcaption>
+  </figure>
+
   <h2>1.3 Unhealthy diet</h2>
   <ul>
     <li><strong>Too much energy in</strong> (carbs/fats) → stored as fat → obesity → linked to heart disease, type 2 diabetes.</li>
@@ -95,6 +196,74 @@
   <h2>1.4 Digestive system</h2>
   <p>Order food travels through:</p>
   <p class="mono-block">mouth → oesophagus → stomach → small intestine → large intestine → rectum → anus</p>
+
+  <figure class="diagram" style="max-width: 540px;">
+    <svg viewBox="0 0 540 470" role="img" aria-label="Schematic of the digestive system showing mouth, oesophagus, stomach, liver, pancreas, small intestine, large intestine, rectum, and anus" font-family="Manrope, sans-serif">
+      <!-- Head -->
+      <circle cx="270" cy="42" r="22" fill="none" stroke="#a8a59c" stroke-width="1.4"/>
+      <line x1="262" y1="63" x2="262" y2="78" stroke="#a8a59c" stroke-width="1.4"/>
+      <line x1="278" y1="63" x2="278" y2="78" stroke="#a8a59c" stroke-width="1.4"/>
+      <!-- Torso outline -->
+      <path d="M 195 92 Q 195 78 215 78 L 325 78 Q 345 78 345 92 L 345 380 Q 345 425 305 425 L 235 425 Q 195 425 195 380 Z" fill="none" stroke="#a8a59c" stroke-width="1.4"/>
+      <!-- Mouth -->
+      <ellipse cx="270" cy="52" rx="10" ry="4" fill="#c97564"/>
+      <!-- Oesophagus -->
+      <rect x="262" y="78" width="16" height="100" fill="#a8a59c" opacity="0.45"/>
+      <!-- Stomach -->
+      <path d="M 222 180 Q 220 162 245 162 Q 282 158 292 192 Q 295 220 268 224 L 240 224 Q 215 224 222 180 Z" fill="#c97564" opacity="0.85"/>
+      <!-- Liver (overlay upper-right) -->
+      <path d="M 290 165 Q 325 158 340 178 Q 345 200 318 213 Q 295 215 288 195 Z" fill="#8a5d9e" opacity="0.85"/>
+      <!-- Pancreas -->
+      <ellipse cx="252" cy="242" rx="32" ry="6" fill="#e0a78c" opacity="0.9"/>
+      <!-- Large intestine (outer U-frame) -->
+      <path d="M 208 258 L 208 372 L 332 372 L 332 258 L 312 258 L 312 352 L 228 352 L 228 258 Z" fill="#d4a866" opacity="0.75"/>
+      <!-- Small intestine (coils inside frame) -->
+      <g stroke="#a3c89a" stroke-width="3.5" stroke-linecap="round" fill="none">
+        <path d="M 238 275 q 12 -8 24 0 q 12 8 24 0 q 12 -8 16 0"/>
+        <path d="M 238 295 q 12 -8 24 0 q 12 8 24 0 q 12 -8 16 0"/>
+        <path d="M 238 315 q 12 -8 24 0 q 12 8 24 0 q 12 -8 16 0"/>
+        <path d="M 238 335 q 12 -8 24 0 q 12 8 24 0 q 12 -8 16 0"/>
+      </g>
+      <!-- Rectum -->
+      <rect x="263" y="372" width="14" height="40" fill="#a8a59c" opacity="0.7"/>
+      <!-- Anus -->
+      <circle cx="270" cy="416" r="3" fill="#a8a59c"/>
+
+      <!-- Labels with leader lines -->
+      <line x1="280" y1="52" x2="395" y2="52" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="50" fill="#c97564" font-size="12" font-weight="600">Mouth</text>
+      <text x="400" y="65" fill="#a8a59c" font-size="10">chewing + saliva → starts starch digestion</text>
+
+      <line x1="278" y1="120" x2="395" y2="115" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="113" fill="#e8e6e0" font-size="12" font-weight="600">Oesophagus</text>
+      <text x="400" y="128" fill="#a8a59c" font-size="10">peristalsis pushes food down</text>
+
+      <line x1="335" y1="180" x2="395" y2="170" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="168" fill="#8a5d9e" font-size="12" font-weight="600">Liver</text>
+      <text x="400" y="183" fill="#a8a59c" font-size="10">makes bile (emulsifies fats)</text>
+
+      <line x1="285" y1="200" x2="395" y2="210" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="208" fill="#c97564" font-size="12" font-weight="600">Stomach</text>
+      <text x="400" y="223" fill="#a8a59c" font-size="10">acid + protein-digesting enzymes</text>
+
+      <line x1="284" y1="242" x2="395" y2="248" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="246" fill="#e0a78c" font-size="12" font-weight="600">Pancreas</text>
+      <text x="400" y="261" fill="#a8a59c" font-size="10">releases digestive enzymes</text>
+
+      <line x1="312" y1="305" x2="395" y2="295" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="293" fill="#a3c89a" font-size="12" font-weight="600">Small intestine</text>
+      <text x="400" y="308" fill="#a8a59c" font-size="10">most digestion + absorption into blood</text>
+
+      <line x1="335" y1="345" x2="395" y2="340" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="338" fill="#d4a866" font-size="12" font-weight="600">Large intestine</text>
+      <text x="400" y="353" fill="#a8a59c" font-size="10">absorbs water; forms faeces</text>
+
+      <line x1="283" y1="392" x2="395" y2="388" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="400" y="386" fill="#e8e6e0" font-size="12" font-weight="600">Rectum &amp; anus</text>
+      <text x="400" y="401" fill="#a8a59c" font-size="10">stores then expels waste</text>
+    </svg>
+    <figcaption>Food travels mouth → oesophagus → stomach → small intestine → large intestine → rectum → anus. The liver and pancreas don't sit on this path but feed bile and enzymes into the small intestine to help digestion happen there.</figcaption>
+  </figure>
 
   <table>
     <thead><tr><th>Organ</th><th>Job</th></tr></thead>
@@ -114,12 +283,120 @@
     <p>The small intestine is long and lined with <strong>villi</strong> (tiny finger-like folds). This gives a huge surface area for absorbing nutrients into the blood.</p>
   </div>
 
+  <figure class="diagram" style="max-width: 620px;">
+    <svg viewBox="0 0 540 320" role="img" aria-label="Cross-section of the small intestine wall showing finger-like villi with capillary networks absorbing digested food from the lumen" font-family="Manrope, sans-serif">
+      <!-- Lumen (digested food area, top) -->
+      <rect x="20" y="20" width="500" height="100" fill="#3d6280" opacity="0.18"/>
+      <!-- Food/nutrient particles in lumen -->
+      <g fill="#a3c89a">
+        <circle cx="60" cy="50" r="3"/>
+        <circle cx="120" cy="40" r="3"/>
+        <circle cx="180" cy="60" r="3"/>
+        <circle cx="240" cy="45" r="3"/>
+        <circle cx="300" cy="55" r="3"/>
+        <circle cx="360" cy="40" r="3"/>
+        <circle cx="420" cy="60" r="3"/>
+        <circle cx="480" cy="50" r="3"/>
+        <circle cx="90" cy="80" r="3"/>
+        <circle cx="200" cy="85" r="3"/>
+        <circle cx="320" cy="80" r="3"/>
+        <circle cx="440" cy="85" r="3"/>
+      </g>
+      <!-- Villi (finger projections rising into lumen) -->
+      <g>
+        <!-- Each villus: rounded finger with capillary loop inside -->
+        <path d="M 60 240 L 60 130 A 18 18 0 0 1 96 130 L 96 240 Z" fill="#d4a866" opacity="0.9"/>
+        <path d="M 130 240 L 130 130 A 18 18 0 0 1 166 130 L 166 240 Z" fill="#d4a866" opacity="0.9"/>
+        <path d="M 200 240 L 200 130 A 18 18 0 0 1 236 130 L 236 240 Z" fill="#d4a866" opacity="0.9"/>
+        <path d="M 270 240 L 270 130 A 18 18 0 0 1 306 130 L 306 240 Z" fill="#d4a866" opacity="0.9"/>
+        <path d="M 340 240 L 340 130 A 18 18 0 0 1 376 130 L 376 240 Z" fill="#d4a866" opacity="0.9"/>
+        <path d="M 410 240 L 410 130 A 18 18 0 0 1 446 130 L 446 240 Z" fill="#d4a866" opacity="0.9"/>
+        <!-- Capillary loops (red) inside each villus -->
+        <g stroke="#c97564" stroke-width="1.4" fill="none">
+          <path d="M 72 230 L 72 150 Q 78 138 84 150 L 84 230"/>
+          <path d="M 142 230 L 142 150 Q 148 138 154 150 L 154 230"/>
+          <path d="M 212 230 L 212 150 Q 218 138 224 150 L 224 230"/>
+          <path d="M 282 230 L 282 150 Q 288 138 294 150 L 294 230"/>
+          <path d="M 352 230 L 352 150 Q 358 138 364 150 L 364 230"/>
+          <path d="M 422 230 L 422 150 Q 428 138 434 150 L 434 230"/>
+        </g>
+      </g>
+      <!-- Intestine wall (base layer) -->
+      <rect x="20" y="240" width="500" height="50" fill="#c97564" opacity="0.7"/>
+      <!-- Absorption arrows (food → into a villus capillary) -->
+      <line x1="180" y1="100" x2="218" y2="155" stroke="#a3c89a" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <polygon points="218,155 213,151 215,159" fill="#a3c89a"/>
+
+      <!-- Labels -->
+      <text x="80" y="40" fill="#9bbfde" font-size="11" font-weight="600">Lumen</text>
+      <text x="80" y="55" fill="#a8a59c" font-size="10">digested food</text>
+
+      <line x1="306" y1="135" x2="430" y2="105" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="435" y="103" fill="#d4a866" font-size="11" font-weight="600">Villus</text>
+      <text x="435" y="118" fill="#a8a59c" font-size="10">finger-like fold</text>
+
+      <line x1="294" y1="195" x2="430" y2="195" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="435" y="193" fill="#c97564" font-size="11" font-weight="600">Capillaries</text>
+      <text x="435" y="208" fill="#a8a59c" font-size="10">carry nutrients into blood</text>
+
+      <line x1="320" y1="265" x2="430" y2="265" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="435" y="263" fill="#e8e6e0" font-size="11" font-weight="600">Intestine wall</text>
+
+      <text x="270" y="310" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">millions of villi → huge surface area → fast absorption</text>
+    </svg>
+    <figcaption>Each villus is one of millions of tiny finger-shaped folds lining the small intestine. Together they multiply the surface area enormously, so digested food is absorbed into the blood very quickly. The capillary loop inside each villus carries the nutrients straight into circulation.</figcaption>
+  </figure>
+
   <h2>1.5 Bacteria and enzymes in digestion</h2>
   <ul>
     <li><strong>Enzymes</strong> are biological catalysts — they speed up the breakdown of large food molecules into small ones the body can absorb.</li>
     <li>Three main types: <strong>amylase</strong> (starch → sugar), <strong>protease</strong> (protein → amino acids), <strong>lipase</strong> (fat → fatty acids + glycerol).</li>
     <li><strong>Gut bacteria</strong> in the large intestine help digest fibre and produce some vitamins.</li>
   </ul>
+
+  <figure class="diagram" style="max-width: 720px;">
+    <svg viewBox="0 0 660 280" role="img" aria-label="Lock and key model: a substrate fits the enzyme's active site, then the enzyme breaks it into two product molecules" font-family="Manrope, sans-serif">
+      <!-- Panel 1: enzyme + substrate bound -->
+      <text x="160" y="32" text-anchor="middle" fill="#e8e6e0" font-size="12" font-weight="600">1. Substrate locks into active site</text>
+
+      <!-- Enzyme shape (with notch on top for substrate) -->
+      <path d="M 90 165 Q 90 100 140 95 L 145 95 L 152 110 L 168 110 L 175 95 L 180 95 Q 230 100 230 165 Q 230 215 160 215 Q 90 215 90 165 Z" fill="#9bbfde" opacity="0.85" stroke="#1a1d22" stroke-width="1.2"/>
+      <text x="115" y="180" fill="#1a1d22" font-size="11" font-weight="700">enzyme</text>
+
+      <!-- Active site label -->
+      <line x1="160" y1="110" x2="245" y2="80" stroke="#6e6c63" stroke-width="0.8"/>
+      <text x="250" y="78" fill="#a8a59c" font-size="10">active site</text>
+
+      <!-- Substrate (two-lobed) sitting in cleft -->
+      <circle cx="152" cy="103" r="7" fill="#d4a866" stroke="#1a1d22" stroke-width="0.8"/>
+      <circle cx="168" cy="103" r="7" fill="#d4a866" stroke="#1a1d22" stroke-width="0.8"/>
+      <line x1="152" y1="103" x2="168" y2="103" stroke="#1a1d22" stroke-width="1.4"/>
+      <text x="160" y="75" text-anchor="middle" fill="#d4a866" font-size="11" font-weight="600">substrate</text>
+
+      <!-- Arrow between panels -->
+      <line x1="270" y1="150" x2="380" y2="150" stroke="#a8a59c" stroke-width="1.4"/>
+      <polygon points="380,150 372,146 372,154" fill="#a8a59c"/>
+      <text x="325" y="135" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">reaction</text>
+      <text x="325" y="170" text-anchor="middle" fill="#a8a59c" font-size="10">bond breaks</text>
+
+      <!-- Panel 2: products released, enzyme unchanged -->
+      <text x="500" y="32" text-anchor="middle" fill="#e8e6e0" font-size="12" font-weight="600">2. Products released; enzyme unchanged</text>
+
+      <!-- Same enzyme (cleft now empty) -->
+      <path d="M 430 165 Q 430 100 480 95 L 485 95 L 492 110 L 508 110 L 515 95 L 520 95 Q 570 100 570 165 Q 570 215 500 215 Q 430 215 430 165 Z" fill="#9bbfde" opacity="0.85" stroke="#1a1d22" stroke-width="1.2"/>
+      <text x="455" y="180" fill="#1a1d22" font-size="11" font-weight="700">enzyme</text>
+      <text x="500" y="240" text-anchor="middle" fill="#a8a59c" font-size="10">(reused — catalyses again)</text>
+
+      <!-- Two products separated above -->
+      <circle cx="475" cy="60" r="8" fill="#a3c89a" stroke="#1a1d22" stroke-width="0.8"/>
+      <circle cx="525" cy="60" r="8" fill="#a3c89a" stroke="#1a1d22" stroke-width="0.8"/>
+      <!-- Motion arrows -->
+      <line x1="495" y1="85" x2="475" y2="70" stroke="#a3c89a" stroke-width="1" stroke-dasharray="3 2"/>
+      <line x1="505" y1="85" x2="525" y2="70" stroke="#a3c89a" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="500" y="105" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">products</text>
+    </svg>
+    <figcaption>Each enzyme has an <strong>active site</strong> shaped to fit one specific substrate (the "lock and key" model). Once the substrate is in, the enzyme breaks it down into smaller products. The enzyme itself is unchanged and ready to do it again — that's why the body needs only tiny amounts. Amylase fits starch, protease fits protein, lipase fits fat.</figcaption>
+  </figure>
 
   <h2>1.6 Drugs</h2>
   <p>A drug is a substance that affects the way the body works.</p>
@@ -148,6 +425,94 @@
     </tbody>
   </table>
   <p>Smoking damages tiny hairs (<strong>cilia</strong>) in the airways that normally sweep mucus + dirt up and out — this is why smokers cough.</p>
+
+  <figure class="diagram" style="max-width: 720px;">
+    <svg viewBox="0 0 660 320" role="img" aria-label="Healthy cilia versus smoker's damaged cilia: healthy cilia sweep mucus and trapped dust up and out; damaged cilia let mucus and dust accumulate" font-family="Manrope, sans-serif">
+      <!-- Panel 1: Healthy -->
+      <text x="160" y="28" text-anchor="middle" fill="#a3c89a" font-size="13" font-weight="600">Healthy airway</text>
+      <!-- Cell wall base -->
+      <rect x="30" y="220" width="260" height="50" fill="#c97564" opacity="0.7"/>
+      <line x1="80" y1="220" x2="80" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <line x1="130" y1="220" x2="130" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <line x1="180" y1="220" x2="180" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <line x1="230" y1="220" x2="230" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <!-- Cilia (slanted, beating right to push mucus up/out) -->
+      <g stroke="#e8e6e0" stroke-width="1.4" stroke-linecap="round">
+        <line x1="40" y1="220" x2="48" y2="195"/>
+        <line x1="55" y1="220" x2="63" y2="195"/>
+        <line x1="70" y1="220" x2="78" y2="195"/>
+        <line x1="85" y1="220" x2="93" y2="195"/>
+        <line x1="100" y1="220" x2="108" y2="195"/>
+        <line x1="115" y1="220" x2="123" y2="195"/>
+        <line x1="130" y1="220" x2="138" y2="195"/>
+        <line x1="145" y1="220" x2="153" y2="195"/>
+        <line x1="160" y1="220" x2="168" y2="195"/>
+        <line x1="175" y1="220" x2="183" y2="195"/>
+        <line x1="190" y1="220" x2="198" y2="195"/>
+        <line x1="205" y1="220" x2="213" y2="195"/>
+        <line x1="220" y1="220" x2="228" y2="195"/>
+        <line x1="235" y1="220" x2="243" y2="195"/>
+        <line x1="250" y1="220" x2="258" y2="195"/>
+        <line x1="265" y1="220" x2="273" y2="195"/>
+        <line x1="280" y1="220" x2="288" y2="195"/>
+      </g>
+      <!-- Mucus layer (thin) with trapped dust -->
+      <path d="M 30 180 Q 100 170 160 180 Q 220 190 290 180 L 290 195 L 30 195 Z" fill="#d8d2c0" opacity="0.85"/>
+      <g fill="#3a3d44">
+        <circle cx="60" cy="186" r="2.5"/>
+        <circle cx="120" cy="183" r="2.5"/>
+        <circle cx="200" cy="187" r="2.5"/>
+        <circle cx="260" cy="184" r="2.5"/>
+      </g>
+      <!-- Motion arrow showing mucus moves up and out -->
+      <line x1="50" y1="155" x2="270" y2="155" stroke="#a3c89a" stroke-width="1.6"/>
+      <polygon points="270,155 262,151 262,159" fill="#a3c89a"/>
+      <text x="160" y="145" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">mucus + dust swept up and out</text>
+      <!-- Labels -->
+      <text x="305" y="200" fill="#a8a59c" font-size="10">cilia beat together</text>
+      <text x="305" y="215" fill="#a8a59c" font-size="10">like a tiny conveyor belt</text>
+
+      <!-- Panel 2: Damaged -->
+      <text x="500" y="28" text-anchor="middle" fill="#c97564" font-size="13" font-weight="600">After smoking damage</text>
+      <rect x="370" y="220" width="260" height="50" fill="#c97564" opacity="0.7"/>
+      <line x1="420" y1="220" x2="420" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <line x1="470" y1="220" x2="470" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <line x1="520" y1="220" x2="520" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <line x1="570" y1="220" x2="570" y2="270" stroke="#1a1d22" stroke-width="0.6" opacity="0.4"/>
+      <!-- Cilia: stunted/missing/flattened -->
+      <g stroke="#a8a59c" stroke-width="1.2" stroke-linecap="round">
+        <line x1="385" y1="220" x2="386" y2="213"/>
+        <line x1="410" y1="220" x2="412" y2="212"/>
+        <line x1="445" y1="220" x2="446" y2="214"/>
+        <line x1="490" y1="220" x2="491" y2="213"/>
+        <line x1="540" y1="220" x2="542" y2="215"/>
+        <line x1="590" y1="220" x2="591" y2="213"/>
+      </g>
+      <!-- Tar deposit on cilia base -->
+      <rect x="370" y="208" width="260" height="14" fill="#3a3d44" opacity="0.7"/>
+      <text x="375" y="217" fill="#e8e6e0" font-size="9" font-weight="600">tar coating</text>
+      <!-- Thick stuck mucus with lots of dust -->
+      <path d="M 370 145 Q 430 130 500 140 Q 570 150 630 142 L 630 205 L 370 205 Z" fill="#d8d2c0" opacity="0.85"/>
+      <g fill="#3a3d44">
+        <circle cx="395" cy="160" r="3"/>
+        <circle cx="430" cy="170" r="3"/>
+        <circle cx="465" cy="155" r="3"/>
+        <circle cx="500" cy="175" r="3"/>
+        <circle cx="540" cy="165" r="3"/>
+        <circle cx="580" cy="180" r="3"/>
+        <circle cx="615" cy="165" r="3"/>
+        <circle cx="410" cy="195" r="3"/>
+        <circle cx="475" cy="190" r="3"/>
+        <circle cx="555" cy="195" r="3"/>
+        <circle cx="600" cy="190" r="3"/>
+      </g>
+      <!-- "X" no-motion indicator + cough -->
+      <text x="500" y="115" text-anchor="middle" fill="#c97564" font-size="11" font-weight="600">mucus + dust stuck — body coughs to clear it</text>
+      <line x1="450" y1="125" x2="550" y2="125" stroke="#c97564" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <text x="500" y="305" text-anchor="middle" fill="#a8a59c" font-size="10">tar from smoke coats and kills the cilia → smoker's cough</text>
+    </svg>
+    <figcaption>The airways are normally lined with millions of tiny hairs (cilia) that beat together to push mucus and trapped dust up and out of the lungs — like a conveyor belt. Tar in cigarette smoke kills the cilia, so the mucus and dirt sit there instead. The body coughs to try to clear it: that's the smoker's cough.</figcaption>
+  </figure>
 
   <div class="quick-ref">
     <h3>Quick reference</h3>
