@@ -232,28 +232,31 @@
       <!-- guide lines at melting and boiling temps -->
       <line x1="70" y1="270" x2="570" y2="270" stroke="#3a3d44" stroke-width="1" stroke-dasharray="3 4"/>
       <line x1="70" y1="120" x2="570" y2="120" stroke="#3a3d44" stroke-width="1" stroke-dasharray="3 4"/>
-      <!-- curve A→B→C→D→E→F -->
+      <!-- impure curve (sloped plateaus, wider range) -->
+      <polyline points="70,300 124,282 256,258 332,132 495,108 560,60"
+                fill="none" stroke="#e0a78c" stroke-width="2.2" stroke-dasharray="6 4" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- pure curve A→B→C→D→E→F -->
       <polyline points="70,300 144,270 242,270 340,120 487,120 560,60"
                 fill="none" stroke="#d4a866" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- legend -->
+      <line x1="370" y1="45" x2="398" y2="45" stroke="#d4a866" stroke-width="2.4"/>
+      <text x="403" y="49" fill="#d4a866" font-size="11" font-weight="600">pure</text>
+      <line x1="450" y1="45" x2="478" y2="45" stroke="#e0a78c" stroke-width="2.2" stroke-dasharray="6 4"/>
+      <text x="483" y="49" fill="#e0a78c" font-size="11" font-weight="600">impure (mixture)</text>
       <!-- segment labels -->
       <text x="107" y="295" text-anchor="middle" fill="#e8e6e0" font-size="11">solid</text>
       <text x="107" y="308" text-anchor="middle" fill="#a8a59c" font-size="10">warming</text>
-      <text x="193" y="262" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">melting</text>
-      <text x="193" y="252" text-anchor="middle" fill="#a8a59c" font-size="10">solid → liquid</text>
+      <text x="193" y="248" text-anchor="middle" fill="#a3c89a" font-size="11" font-weight="600">melting</text>
+      <text x="193" y="238" text-anchor="middle" fill="#a8a59c" font-size="10">solid → liquid</text>
       <text x="291" y="200" text-anchor="middle" fill="#e8e6e0" font-size="11">liquid</text>
       <text x="291" y="213" text-anchor="middle" fill="#a8a59c" font-size="10">warming</text>
-      <text x="413" y="112" text-anchor="middle" fill="#9bbfde" font-size="11" font-weight="600">boiling</text>
-      <text x="413" y="102" text-anchor="middle" fill="#a8a59c" font-size="10">liquid → gas</text>
+      <text x="413" y="98" text-anchor="middle" fill="#9bbfde" font-size="11" font-weight="600">boiling</text>
+      <text x="413" y="88" text-anchor="middle" fill="#a8a59c" font-size="10">liquid → gas</text>
       <text x="523" y="78" text-anchor="middle" fill="#e8e6e0" font-size="11">gas</text>
       <text x="523" y="91" text-anchor="middle" fill="#a8a59c" font-size="10">warming</text>
     </svg>
-    <figcaption>Heating curve for a pure substance. Temperature stays flat while it melts and again while it boils — all the energy goes into breaking the bonds between particles, not raising the temperature. The plateaus sit at sharp, fixed values (the melting and boiling points), which is how you tell a substance is pure.</figcaption>
+    <figcaption>Heating curves for a pure substance (gold) and an impure mixture (dashed). The pure substance has flat plateaus at sharp, fixed melting and boiling points — all the energy goes into breaking bonds between particles, not raising the temperature. The mixture starts melting earlier, finishes later, and the plateau slopes upward across a <em>range</em> of temperatures; same for boiling. Flat plateaus at sharp temperatures = pure; sloped/smeared plateaus = mixture.</figcaption>
   </figure>
-
-  <div class="box box-tip">
-    <div class="box-label">Pure vs impure</div>
-    <p>Impure substances (mixtures) melt over a <em>range</em> of temperatures and the plateaus are sloped, not flat. So if the graph has flat plateaus at sharp temperatures → pure. Sloped or smeared plateaus → mixture.</p>
-  </div>
 
   <h2>2.9 Mixtures</h2>
   <p>Two or more substances <em>not</em> chemically joined — they keep their own properties and can be separated physically.</p>
