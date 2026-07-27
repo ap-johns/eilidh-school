@@ -6,9 +6,9 @@ Science 7 and Science 8 are each split in half (a/b) and spread one-per-week acr
 
 | Week | Dates | Due by end of week | Status |
 |------|-------|--------------------|--------|
-| 1 | Mon 13 – Sun 19 Jul | **Science 6** | ✅ Done |
+| 1 | Mon 13 – Sun 19 Jul | **Science 6** ✅ | ✅ Done |
 | 2 | Mon 20 – Sun 26 Jul | **Maths 7** ✅ + **Science 7a** ✅ | ✅ Done |
-| 3 | Mon 27 Jul – Sun 2 Aug | **Maths 8** + **Science 7b** | ⬜ To do |
+| 3 | Mon 27 Jul – Sun 2 Aug | **Maths 8** ⬜ + **Science 7b** ✅ | ◑ In progress |
 | 4 | Mon 3 – Sun 9 Aug | **Maths 9** + **Science 8a** | ⬜ To do |
 | 5 | Mon 10 – Sun 16 Aug | **Science 9** + **Science 8b** | ⬜ To do |
 
