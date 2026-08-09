@@ -9,7 +9,7 @@ Remaining work — **Science 9 (split 9a/9b)** and **Maths 9** — spread across
 | 1 | Mon 13 – Sun 19 Jul | **Science 6** ✅ | ✅ Done |
 | 2 | Mon 20 – Sun 26 Jul | **Maths 7** ✅ + **Science 7a** ✅ | ✅ Done |
 | 3 | Mon 27 Jul – Sun 2 Aug | **Maths 8a** ✅ + **Science 7b** ✅ | ✅ Done |
-| 4 | Mon 3 – Sun 9 Aug | **Maths 8b** ✅ + **Science 9a** ⬜ | ◑ In progress |
+| 4 | Mon 3 – Sun 9 Aug | **Maths 8b** ✅ + **Science 9a** ✅ | ✅ Done |
 | 5 | Mon 10 – Sun 16 Aug | **Maths 9** ⬜ + **Science 9b** ⬜ | ⬜ To do |
 
 ## Notes
