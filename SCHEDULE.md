@@ -2,7 +2,7 @@
 
 **Goal:** finish all seven modules by **Sun 16 Aug 2026** — comfortably ahead of the **1 Sep** deadline (~2 weeks' buffer).
 
-Remaining work — **Maths 9** in week 5. All Science modules are complete. No week carries two Maths modules.
+**All seven modules are complete** — finished Thu 13 Aug 2026, three days inside the 16 Aug target and well ahead of the 1 Sep deadline.
 
 | Week | Dates | Due by end of week | Status |
 |------|-------|--------------------|--------|
@@ -10,11 +10,11 @@ Remaining work — **Maths 9** in week 5. All Science modules are complete. No w
 | 2 | Mon 20 – Sun 26 Jul | **Maths 7** ✅ + **Science 7a** ✅ | ✅ Done |
 | 3 | Mon 27 Jul – Sun 2 Aug | **Maths 8a** ✅ + **Science 7b** ✅ | ✅ Done |
 | 4 | Mon 3 – Sun 9 Aug | **Maths 8b** ✅ + **Science 9a** ✅ | ✅ Done |
-| 5 | Mon 10 – Sun 16 Aug | **Maths 9** ⬜ + **Science 9b** ✅ | ◑ In progress |
+| 5 | Mon 10 – Sun 16 Aug | **Maths 9** ✅ + **Science 9b** ✅ | ✅ Done |
 
 ## Notes
 
-- Science 9 was split into 9a (week 4) and 9b (week 5); both are now done.
+- Science 9 was split into 9a (week 4) and 9b (week 5); both are done.
 - All Science modules (6–9) are complete.
-- Maths 9 is the last module of all — no week doubles up two Maths.
-- Hard deadline: **1 Sep 2026**. Target: **16 Aug 2026**.
+- Maths 9 was the last module of all, finished in week 5.
+- Hard deadline: **1 Sep 2026**. Target: **16 Aug 2026** — met.
